@@ -374,7 +374,7 @@ où  :
 
 Au format vectoriel nous avons l'équation suivante :
 
-$ \widehat{y} = h_\theta(x) = \theta.X$
+$\widehat{y} = h_\theta(x) = \theta.X$
 
 On définit la fonction de perte de ce modèle comme :
 
@@ -387,7 +387,7 @@ $\frac{\partial}{\partial \theta_j} MSE(\theta) = \frac{2}{N}\sum_{i=1}^N (\thet
   
 ou au format vectoriel
 
-$\nabla_\theta MSE(\theta) = \begin{pmatrix}  \frac{\partial}{\partial \theta_0} \\ \frac{\partial}{\partial \theta_1} \\ . \\\frac{\partial}{\partial \theta_n}  \end{pmatrix} =\frac{2}{N}X^T (X\theta-y)$  
+$$\nabla_\theta MSE(\theta) = \begin{pmatrix}  \frac{\partial}{\partial \theta_0} \\ \frac{\partial}{\partial \theta_1} \\ . \\frac{\partial}{\partial \theta_n}  \end{pmatrix} =\frac{2}{N}X^T (X\theta-y)$$ 
 
 Une fois que vous avez le vecteur de descente de gradient, vous devez simplement mettre à jour vos paramètres $\theta$ jusqu'à atteindre le minimum de votre fonction.
 
@@ -396,7 +396,7 @@ $\theta^{(next)} = \theta - \eta\nabla_\theta MSE(\theta)$
 #### Exemple descente de gradient
 Un exemple en dimension 1 pour mieux comprendre 😀
 
-Nous avons une fonction  $f(x) = 3x^2 -2x +5 $ et nous souhaitons minimiser cette fonction
+Nous avons une fonction  $f(x) = 3x^2 -2x +5$ et nous souhaitons minimiser cette fonction
 
 <u>Graphique N°4 :Exemple descente de gradient</u>
 
@@ -406,7 +406,7 @@ Nous avons une fonction  $f(x) = 3x^2 -2x +5 $ et nous souhaitons minimiser cett
 
 En dimension le vecteur est de taille 1, donc on calcule uniquement une dérivée
 
-$f'(x) = 6x -2x $
+$f'(x) = 6x -2x$
  
 **Etape 2 : On initialise une valeur de $x$ par défaut et une valeur pour le learning rate**
 

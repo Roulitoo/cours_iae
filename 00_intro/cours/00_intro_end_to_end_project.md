@@ -2,7 +2,7 @@
 
 <center><h1> Chapitre d'introduction : Projet Data et concepts utiles</h1></center>
 
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/master/00_intro/img/Logo_IAE_horizontal.png?token=GHSAT0AAAAAABZOBGATHY75UB5U2VEALA4GY3GXRVQ" alt="Logo IAE.png" style="width:200px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/Logo_IAE_horizontal.png" alt="Logo IAE.png" style="width:200px;"/>
 
 
 
@@ -340,7 +340,7 @@ Nous obtenons en ce point pour un paramètre $\theta$ dont la valeur minimise no
 
 
 <u>Graphique N°2 :Descente de gradient, learning rate trop faible</u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/master/00_intro/img/descente_gradient_2.png?token=GHSAT0AAAAAABZOBGATYCCCAVANYEDMAHTCY3CYY6Q" alt="fig_2_descente_gradient.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_gradient_2.png" alt="fig_2_descente_gradient.png" style="width:600px;"/>
 
 Il est important que la taille du 'saut' de mise à jour de la valeur de votre paramètre $\theta$ ne soit pas trop faible.
 On appellera le paramètre qui contrôle le 'saut' **LEARNING RATE**.  
@@ -348,7 +348,7 @@ Si celui-ci est trop faible vos 'sauts' seront petits, il faudra beaucoup d'ité
 
 
 <u>Graphique N°3 :Descente de gradient, learning rate trop haut</u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/master/00_intro/img/descente_gradient_3.png?token=GHSAT0AAAAAABZOBGASJVGZSIW23ZBCCRT6Y3CY5OA" alt="fig_3_descente_gradient.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_gradient_3.png" alt="fig_3_descente_gradient.png" style="width:600px;"/>
 
 A l'inverse si le *LEARNING RATE* est trop élevé vous pourriez ne jamais trouver l'optimal de votre fonction.  
 Le calcul divergera et ne trouvera jamais de minimum local.
@@ -396,7 +396,7 @@ Un exemple en dimension 1 pour mieux comprendre 😀
 Nous avons une fonction  $f(x) = 3x^2 -2x +5 $ et nous souhaitons minimiser cette fonction
 
 <u>Graphique N°4 :Exemple descente de gradient</u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/master/00_intro/img/exemple_grad_1D_4.png?token=GHSAT0AAAAAABZOBGATOM24LDELJ53HLCDQY3C4SIQ" alt="fonction_exemple_5.png" style="width:500px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/exemple_grad_1D_4.png" alt="fonction_exemple_4.png" style="width:500px;"/>
 
 **Etape 1 : On calcule son vecteur gradient **
 
@@ -414,7 +414,7 @@ $x_{n+1} = x_n -\eta*f'(x_n)$
 **Etape 3 : Itération sucessive descente de gradient**
 
 <u>Graphique N°5 :Exemple descente de gradient</u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/master/00_intro/img/descente_grad_exemple_5.png?token=GHSAT0AAAAAABZOBGATDNVWXSKSYDGE55KQY3C5XZA" alt="fonction_exemple_descente_grad_6.png" style="width:500px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_grad_exemple_5.png" alt="fonction_exemple_descente_grad_6.png" style="width:500px;"/>
 
 
 Successivement la valeur de $\theta$ se rapproche de la valeur de $x=\frac{1}{3}$ qui minise la fonction.
@@ -498,7 +498,7 @@ Il existe 3 types de grid search :
 On peut voir graphiquement le résultat des 2 approches.
 
 <u>Graphique N°5 :Visualisation grid search avec 2 hyperparamètres</u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/master/00_intro/img/grid_search_6.png?token=GHSAT0AAAAAABZOBGATOV3LKQS7DJSZMSAUY3GTZQQ" alt="gris_search.png" style="width:1000px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/grid_search_6.png" alt="gris_search.png" style="width:1000px;"/>
 
 Le random search donne généralement de meilleure performance mais il est aussi beaucoup plus couteux en temps de calcul... A vous d'arbitrer.
 

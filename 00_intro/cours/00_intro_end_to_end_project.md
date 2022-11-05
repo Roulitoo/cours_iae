@@ -369,7 +369,7 @@ où  :
 - $\theta_0 : Biais\space du\space modele $
 - $\theta_n : Paramètre \space du \space modèle$
 - $\widehat{y} : Valeur\space prédite$
-- $ n : Nombre \space de \space features$
+- $n : Nombre \space de \space features$
 
 
 Au format vectoriel nous avons l'équation suivante :

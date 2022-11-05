@@ -333,6 +333,7 @@ On peut l'observer graphiquement sur le graphique N°1
 
 
 <u>Graphique N°1 :Descente de gradient</u>
+
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_gradient_1.png" alt="fig_1_descente_gradient.png" style="width:600px;"/>
 
 Chaque point rouge représente une itération de descente de gradient et converge vers le minimum global de la fonction de perte.  
@@ -340,6 +341,7 @@ Nous obtenons en ce point pour un paramètre $\theta$ dont la valeur minimise no
 
 
 <u>Graphique N°2 :Descente de gradient, learning rate trop faible</u>
+
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_gradient_2.png" alt="fig_2_descente_gradient.png" style="width:600px;"/>
 
 Il est important que la taille du 'saut' de mise à jour de la valeur de votre paramètre $\theta$ ne soit pas trop faible.

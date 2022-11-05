@@ -1,9 +1,9 @@
     
 
 <center><h1> Chapitre d'introduction : Projet Data et concepts utiles</h1></center>
-
+<p align="center">
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/Logo_IAE_horizontal.png" alt="Logo IAE.png" style="width:200px;"/>
-
+</p>
 
 
 #### Table of Contents
@@ -350,6 +350,7 @@ Si celui-ci est trop faible vos 'sauts' seront petits, il faudra beaucoup d'ité
 
 
 <u>Graphique N°3 :Descente de gradient, learning rate trop haut</u>
+
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_gradient_3.png" alt="fig_3_descente_gradient.png" style="width:600px;"/>
 
 A l'inverse si le *LEARNING RATE* est trop élevé vous pourriez ne jamais trouver l'optimal de votre fonction.  
@@ -398,6 +399,7 @@ Un exemple en dimension 1 pour mieux comprendre 😀
 Nous avons une fonction  $f(x) = 3x^2 -2x +5 $ et nous souhaitons minimiser cette fonction
 
 <u>Graphique N°4 :Exemple descente de gradient</u>
+
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/exemple_grad_1D_4.png" alt="fonction_exemple_4.png" style="width:500px;"/>
 
 **Etape 1 : On calcule son vecteur gradient **
@@ -416,6 +418,7 @@ $x_{n+1} = x_n -\eta*f'(x_n)$
 **Etape 3 : Itération sucessive descente de gradient**
 
 <u>Graphique N°5 :Exemple descente de gradient</u>
+
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_grad_exemple_5.png" alt="fonction_exemple_descente_grad_6.png" style="width:500px;"/>
 
 
@@ -500,6 +503,7 @@ Il existe 3 types de grid search :
 On peut voir graphiquement le résultat des 2 approches.
 
 <u>Graphique N°5 :Visualisation grid search avec 2 hyperparamètres</u>
+
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/grid_search_6.png" alt="gris_search.png" style="width:1000px;"/>
 
 Le random search donne généralement de meilleure performance mais il est aussi beaucoup plus couteux en temps de calcul... A vous d'arbitrer.

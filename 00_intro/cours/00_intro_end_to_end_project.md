@@ -8,23 +8,23 @@
 
 #### Table of Contents
 [1. Mener un projet data](#1-etapes-dun-projet-data)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Bien définir le problème](#1-Bien-d%C3%A9finir-le-probl%C3%A8me)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.2 Trouver les données](#2-Trouver-les-donn%C3%A9es)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Explorer les données](#3-Explorer-les-donn%C3%A9es)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.4 Préparer le dataset](#4-Pr%C3%A9parer-le-dataset)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.5 Explorer vos modèles](#5-Explorer-des-mod%C3%A8les-et-d%C3%A9terminer-une-short-list)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.6 Tuner les modèles](#6-Tuner-les-mod%C3%A8les)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.7 Présenter votre solution](#7-Pr%C3%A9senter-votre-solution)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.8 Automatiser,monitorer,maintenir](#8-Automatiser-votre-mod%C3%A8le,-monitorer-votre-mod%C3%A8le-et-le-maintenir)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Bien définir le problème](#11-bien-d%C3%A9finir-le-probl%C3%A8me)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.2 Trouver les données](#12-trouver-les-donn%C3%A9es)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Explorer les données](#13-explorer-les-donn%C3%A9es)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.4 Préparer le dataset](#14-pr%C3%A9parer-le-dataset)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.5 Explorer vos modèles](#15-explorer-des-mod%C3%A8les-et-d%C3%A9terminer-une-short-list)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.6 Tuner les modèles](#16-tuner-les-mod%C3%A8les)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.7 Présenter votre solution](#17-pr%C3%A9senter-votre-solution)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.8 Automatiser,monitorer,maintenir](#18-automatiser-votre-mod%C3%A8le-monitorer-votre-mod%C3%A8le-et-le-maintenir)<br>
 
-[2. Liste de concept utile](#-Liste-de-concept-utile-)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Imbalanced dataset](#1-Imbalanced-dataset)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Feature scaling](#2-Features-scaling)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Gradient descent](#3-Gradient-Descent)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.4 Loss or metric function](#4-LOSS-function-or-Metric-function?)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.5 Hyperparamètres](#5-Hyperpam%C3%A8tre)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.6 Grid search](#6-Grid-search)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.7 Computational complexity](#7-Computational-complexity)<br>
+[2. Liste de concept utile](#-2-liste-de-concept-utile-)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Imbalanced dataset](#21-imbalanced-dataset)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Feature scaling](#22-features-scaling)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Gradient descent](#23-gradient-descent)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.4 Loss or metric function](#24-loss-function-or-metric-function)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.5 Hyperparamètres](#25-hyperpam%C3%A8tre)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.6 Grid search](#26-grid-search)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.7 Computational complexity](#27-computational-complexity)<br>
 
 
 
@@ -578,7 +578,7 @@ from skopt import BayesSearchCV
 # parameter ranges are specified by one of below
 from skopt.space import Real, Categorical, Integer
 #Real : Nombre réel
-#Categorial : data catégoriel, exemple 'bleu', 'rouge'
+#Categorial : data catégorielle, exemple 'bleu', 'rouge'
 #Integer : ...
 
 #Define grid

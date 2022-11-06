@@ -123,7 +123,7 @@ $f(x)<0 : classe:0$
 
 Pour ce problème, il existe une **infinité de solutions**. Comment en déterminer une optimale??
 
-Une première piste est qu'en machine learning, notre objectif est de réalisation une prédiction.  
+Une première piste est qu'en machine learning, notre objectif est de réaliser une prédiction.  
 Pour cela, il faut donc que notre modèle soit **généralisable**. Un point qui ne figure pas dans les données d'entrainement, devra être bien classifié.
 
 

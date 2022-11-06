@@ -2,6 +2,7 @@
 <p align="center">
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/Logo_IAE_horizontal.png" alt="Logo IAE.png" style="width:200px;"/>
 </p>
+
 #### Table of Contents
 [1. Préambule](#Etapes-d'un-projet-Data)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Iris flower ](#)<br>
@@ -87,7 +88,7 @@ Le tableau comporte 4 features(colonnes) ainsi que l'espèce de la fleur.
 Regardons également sur le graphique N°1 la dispersion de la longueur des pétales en fonction de leur largeur.
 
 <u>Graphique N°1 :  Répartition des Iris en fonction de la longueur et largueur de ses pétales</u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_1_iris_scatter_y3.png?token=GHSAT0AAAAAABZOBGASBLUFH4KFDPKMDBLCY2ZS7VA" alt="fig_1_iris_scatter_y3.png" style="width:800px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_1_iris_scatter_y3.png" style="width:600px;"/>
 
 On remarque que les points rouges ont une distribution très différente des autres.  
 Pour les points gris et oranges on voit également qu'ils appartiennent à 2 distributions distinctes mais la frontière entre les 2 est plus mince
@@ -117,7 +118,8 @@ $f(x)>0 : classe: 1$<br>
 $f(x)<0 : classe:0$
 
 <u>Graphique N°2 :Frontière de décision pour classification binaire</u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_2_intuition_svm.png?token=GHSAT0AAAAAABZOBGATTNP5G5DXIMM2AD72Y2ZTZPQ" alt="fig_2_intuition_svm.png" style="width:600px;"/>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_2_intuition_svm.png" style="width:600px;"/>
 
 Pour ce problème, il existe une **infinité de solutions**. Comment en déterminer une optimale??
 
@@ -134,8 +136,9 @@ Plus elle sera proche plus on aura de chance qu'un nouveau point issu de la dist
 
 
 
-<u>Gprahique N°3 : Calculer une distance </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/03_calcul_distance.png?token=GHSAT0AAAAAABZOBGATQDJTU72UB5OMPXQ4Y2ZT5LA" alt="03_calcul_distance" style="width:400px;"/>
+<u>Graphique N°3 : Calculer une distance </u>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/03_calcul_distance.png" alt="03_calcul_distance" style="width:400px;"/>
 
 Pour rappel la distance entre un point et une droite se calcule de la manière suivante pour un espace à 2 dimensions
 
@@ -160,15 +163,15 @@ Si on transpose notre exemple de R² à notre problème de SVM on obtient :
 
 L'équation de la frontière de décision noté $H$ est : $f(x) = \lt\beta.x \gt= \beta^Tx+b$ 
 
-L'écart entre la frontière de décision et une marge est alors notée:$\large\frac{(\beta^Tx+b)}{\vert\vert\beta\vert\vert_2}$<br>
+L'écart entre la frontière de décision et une marge est alors notée: $\large\frac{(\beta^Tx+b)}{\vert\vert\beta\vert\vert_2}$<br>
 Comme il y a 2 marges on obtient la formule suivante :
-
+<br>
 $\normalsize Marge = 2d(x,H) =2\frac{(\omega^T\beta+b)}{\vert\vert\omega\vert\vert_2}$
 
 
 où :<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\beta :$ paramètre du modèle <br>
-&nbsp;&nbsp;&nbsp;&nbsp;$\vert\vert\beta\vert\vert_2$ désigne la norme euclidienne de $\beta$ : $\sqrt{\beta_1²+\beta_2²+\beta_3²+...+\beta_n²}$ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $\beta$ : paramètre du modèle <br>
+&nbsp;&nbsp;&nbsp;&nbsp; $\vert\vert\beta\vert\vert_2$ désigne la norme euclidienne de $\beta$ : $\sqrt{\beta_1²+\beta_2²+\beta_3²+...+\beta_n²}$ 
 
 
 💡Pour rappel, la marge est la distance minimale de l’hyperplan à un des points d’entraînement.
@@ -186,7 +189,8 @@ $\large arg max_{\beta,b} min_k \frac{l_k(\beta^Tx+b)}{\vert\vert\beta\vert\vert
 où $l_k$ est le label de la données
 
 <u>Graphique N°4 : Frontière de décision et marges, SVM linéaire</u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_4_visualisation_svm_lineaire.png?token=GHSAT0AAAAAABZOBGASGEY5ZSO6KNSISS36Y2ZUGFQ" alt="fig_4_visualisation_svm_lineaire" style="width:600px;"/>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_4_visualisation_svm_lineaire.png" alt="fig_4_visualisation_svm_lineaire" style="width:600px;"/>
     
 Sur le graphique N°4, on peut observer les points frontières qui maximisent l'écart entre la marge et la frontière de décision.
 Ici on peut dire que la frontière de décision est bonne.  
@@ -220,12 +224,10 @@ On a également rajouté la standardisation de nos 2 features $x_1scaled$ et $x_
 Nous lançons un SVM linéaire pour tenter de classifier les labels 0 et 1 en fonction de ces features.
 Un premier avec les features brutes et l'autre avec les features standardisés
 
-Regardons maintenant sur le graphique N° comment la standardisation impact la frontière de décision.
+Regardons maintenant sur le graphique N°5 comment la standardisation impact la frontière de décision.
 
 <u>Tableau N°2 : Feature scaling</u>
-
-
-
+<br>
 | x1 | x2 | x1_scaled | x2_scaled | label |
 |----|----|-----------|-----------|-------|
 | 1  | 50 | -1.507    | -0.115    | 0     |
@@ -234,7 +236,8 @@ Regardons maintenant sur le graphique N° comment la standardisation impact la f
 | 5  | 60 | 0.904     | 0.346     | 1     |
 
 <u>Graphique N°5 : Influence de l'échelle des données sur le modèle </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_5_scaling_data.png?token=GHSAT0AAAAAABZOBGATNCBW3H74K63FTNESY2ZUQGA" alt="fig_5_scaling_data" style="width:600px;"/>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_5_scaling_data.png" alt="scaling_features_5" style="width:600px;"/>
 
 <style>
 div.red { background-color:#ff000020; border-radius: 5px; padding: 20px;}
@@ -244,9 +247,7 @@ div.red { background-color:#ff000020; border-radius: 5px; padding: 20px;}
     
 Les SVM sont sensibles à l'échelle des données. Il est important de standardiser ses données avant d'entrainer le modèle.
 
-$$
-  Xscale = \frac{X-\mu}{\sigma}\ 
-$$
+$\large Xscale = \frac{X-\mu}{\sigma}\$
 
 </div>
 
@@ -274,7 +275,8 @@ La frontière de décision ne sera pas optimale et il sera compliqué de génér
 
 
 <u>Graphique N°6 : Données non linéaire et SVM </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_6_svm_linear_problem.png?token=GHSAT0AAAAAABZOBGAS6PBYQVT6TKJJQGXIY2ZUTXQ" alt="fig_6_svm_linear_problem" style="width:800px;"/>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_6_svm_linear_problem.png" alt="fig_6_svm_linear_problem" style="width:800px;"/>
 
 Pour éviter ce genre de problème, les statisticiens ont développé un modèle plus flexible.
 Son objectif est de trouver un équilibre entre la maximisation des marges et le nombre de fois où l'on peut ignorer un point.
@@ -323,7 +325,7 @@ svm_clf.predict([[1,1]])
 
 **Plus on augmente la valeur de $C$ plus le modèle va avoir tendance à produire des marges proches de la frontière de décision et à l'inverse plus $C$ est petit plus la frontière sera grande.**
 <br>
-Pour mieux le comprendre, regardons le graphique N° . Cela représente 3 SVM entrainés avec 3 valeurs différentes de $C$ à savoir 1, 50 et 100
+Pour mieux le comprendre, regardons le graphique N°7 . Cela représente 3 SVM entrainés avec 3 valeurs différentes de $C$ à savoir 1, 50 et 100
 
 Code suivant
 ```python
@@ -351,8 +353,9 @@ scaled_svm_clf2.fit(X, y)
 scaled_svm_clf3.fit(X, y)
 ```
 
-<u>graphique N°7 :  </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_7_regularisation_critere.png?token=GHSAT0AAAAAABZOBGASPSRSPNQDAEM3QKSOY2ZS3KA" alt="fig_7_regularisation_critere" style="width:1400px;"/>
+<u>Graphique N°7 :Influence du critère de regularisation </u>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_7_regularisation_critere.png" alt="fig_7_regularisation_critere" style="width:1400px;"/>
 
 Pour les autres hyperparamtres fixés, une augmentation de C permet de diminuer la taille des marges. 
 Plus la taille de la marge sera faible plus il sera compliqué de généraliser pour le modèle
@@ -387,8 +390,9 @@ Heureusement, il existe des techniques pour faire évoluer les SVM et traiter le
 
 Prenons l'exemple intuitif suivant :
 
-<u>graphique N°8 :  </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_8_SVM_non_lineaire.png?token=GHSAT0AAAAAABZOBGASMJJWQECQ3ULPKKDGY2ZS37A" alt="fig_8_SVM_non_lineaire" style="width:800px;"/>
+<u>Graphique N°8 : Données non linéairement séparables  </u>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_8_SVM_non_lineaire.png" alt="fig_8_SVM_non_lineaire" style="width:800px;"/>
 
 Ce problème est un cas récurrent en machine learning. Nous cherchons à classifier des données mais les features disponibles ne permettent pas de le faire.
 
@@ -399,8 +403,9 @@ Une transformation possible est d'ajouter un feature qui serait $X_2 = X_1²$
 
 Regardons graphiquement le résultat
 
-<u>graphique N°9 :  </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_9_svm_separation_lineaire.png?token=GHSAT0AAAAAABZOBGATM6V77DASKHUIZVZYY2ZS4HA" alt="fig_9_svm_separation_lineaire" style="width:800px;"/>
+<u>Graphique N°9 : Astuce pour données non linéairement séparables </u>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_9_svm_separation_lineaire.png" alt="fig_9_svm_separation_lineaire" style="width:800px;"/>
 
 En utilisant une transformation qui nous fait passer d'un problème à 1D à 2D, on trouve un espace où nos données sont linéairement séparables.
 **Ce type de transformation est très utile pour les SVM mais s'applique à tous les modèles de machine learning.**
@@ -460,8 +465,9 @@ polynomial_svm_clf_test= LinearSVC(C=1, loss='hinge', random_state=42)
 polynomial_svm_clf_test.fit(X_degr3_scaled,y)
 ```
 
-<u>graphique N°10 :  </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_10_classification_non_lineaire.png?token=GHSAT0AAAAAABZOBGASDXBX7YBJM23ZMKN6Y2ZS4NA" alt="fig_10_classification_non_lineaire" style="width:800px;"/>
+<u>Graphique N°10 : SVM transformation polynomiale </u>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_10_classification_non_lineaire.png" alt="fig_10_classification_non_lineaire" style="width:800px;"/>
 
 ### 2.5.1-Polynomial Kernel
 
@@ -492,8 +498,9 @@ svm.fit(X, y)
 # coef0 ==> Contrôle l'infulence des polynomes
 ```
 
-<u>graphique N°11 :  </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_11_svm_no_lineaire_hyperpara.png?token=GHSAT0AAAAAABZOBGASCWXYK4BIUEU5PLXIY2ZS4WQ" alt="fig_11_svm_no_lineaire_hyperpara" style="width:1000px;"/>
+<u>Graphique N°11 : SVM non linéaire influence des hyperparamètres </u>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_11_svm_no_lineaire_hyperpara.png" alt="fig_11_svm_no_lineaire_hyperpara" style="width:1000px;"/>
 
 La facon la plus simple de trouver les hyperparamètres adéquats et de réaliser un *grid search*. Nous verrons en TD comment l'implémenter avec sklearn
 
@@ -504,7 +511,7 @@ Vous pouvez aller voir celles qui sont implémentées avec [sklearn](https://sci
 
 La dernière que nous allons voir est une des plus populaires pour les SVM est la fonction de similarité *Gaussian Radial Basis Function*. Elle se définit formellement de la façon suivante
 
-Equation N°
+<u>Equation N° 3  : kernel trick</u>
 
 $\phi_\gamma(x,x') = exp(-\gamma\vert\vert x-x'\vert\vert²)$
 
@@ -513,21 +520,22 @@ $x'$ = Un point repère que nous choisisons
 
 Exemple :
 
-Prenons le cas du graphique 1D N°...
+Prenons le cas du graphique 1D N°12
 Nous prenons $x'$ = {-2,1} comme repères et $x$ = -1 pour un $\gamma =0.3$
 
 Nous obtenons donc les fonctions de similiratés suivantes pour 2 nouveaux features $x_2$ et $x_3$
 
-$x_2 = exp(-0.3*1²) \simeq  0.74 $
+$x_2 = exp(-0.3*1²) \simeq  0.74$
 
-$x_3 = exp(-0.3*2²) \simeq  0.3 $
-
-
+$x_3 = exp(-0.3*2²) \simeq  0.3$
 
 
 
-<u>graphique N°12 :  </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_12_similarity_features.png?token=GHSAT0AAAAAABZOBGASD7UVYX4EJLOEUOFGY2ZS45A" alt="fig_12_similarity_features" style="width:800px;"/>
+
+
+<u>Graphique N°12 : Similarity feature construction </u>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_12_similarity_features.png" alt="fig_12_similarity_features" style="width:800px;"/>
 
 Comme pour les *polynomials features*, vous pouvez créer à la main vous-mêmes les features que vous souhaitez rajouter dans votre dataset avec cette technique.
 Choissier autant de 'repères' que vous avez de ligne dans votre dataset pour créer de nouveaux features.
@@ -557,8 +565,9 @@ svm.fit(X, y)
 Notez également que gamma comme C est un hyperparamètre permettant de régulariser le modèle.
 Si votre modèle est en *overfitting* pensez à réduire gamma/C et inversement s'il est en *underfitting*
 
-<u>graphique N°12 :  </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/13_rbf_kernel.png?token=GHSAT0AAAAAABZOBGAT6JHMTZ72HVIGNAP6Y2ZS5GA" alt="13_rbf_kernel" style="width:800px;"/>
+<u>Graphique N°13 : Frontière de décision et similarity features </u>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/13_rbf_kernel.png" alt="13_rbf_kernel" style="width:800px;"/>
 
 <style>
 div.blue { background-color: rgba(117, 190, 218, 0.5); border-radius: 5px; padding: 20px;}
@@ -681,8 +690,9 @@ OvO_SVC_clf.fit(X_train , y_train)
 
 ```
 
-<u>graphique N° 14:  </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_14_mnist.png?token=GHSAT0AAAAAABZOBGAT3NHVR4YEHYDD47TQY2ZS5OQ" alt="fig_14_mnist" style="width:600px;"/>
+<u>Graphique N° 14: Visualisation chiffres manuscrits </u>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_14_mnist.png" alt="fig_14_mnist" style="width:600px;"/>
 
 <center>************************Demo avec le code 01_SVM_DEMO************************</center>
 
@@ -699,8 +709,9 @@ Le modèle cherche à inclure le maximum d'observation à l'intérieur de ses ma
 
 Regardons comme il agit à travers 2 exemples
 
-<u>graphique N°15 :  </u>
-<img src="https://raw.githubusercontent.com/Roulitoo/cours_iae/main/img/fig_15_svm_reg.png?token=GHSAT0AAAAAABZOBGATB75PQJFS25GWZEAIY2ZS5ZQ" alt="fig_15_svm_reg" style="width:700px;"/>
+<u>Graphique N°15 : Exemple SVM régression</u>
+<br>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_15_svm_reg.png" alt="fig_15_svm_reg" style="width:700px;"/>
 
 Vous pouvez utilisez le code suivant pour l'implémenter sous python.
 La logique est la même que pour la classfication 😉

@@ -21,7 +21,7 @@ Chaque repos est structuré de la manière suivante
 
 ```
 
-Si vous avez une remarque ou question, n'hésitez pas à me taguer directement avec un [issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). Vous pourrez voir les questions des autres et ca m'évitera de répondre à la même question.
+Si vous avez une remarque ou question, n'hésitez pas à me taguer directement avec un [issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). Vous pourrez voir les questions des autres et ma réponse.
 
 
 
@@ -33,4 +33,33 @@ Vous aurez également des travaux à faire à la maison pour poursuivre votre ap
 
 # Prérequis
 
+## Python
 
+Vous devez déja voir une première expérience en programmation avec Python. 
+Gérer des données avec python avec les packages usuelles pour la data science doit être facile.
+
+⚠️ Si vous ramenez votre ordinateur perso vous devez installer Python avant notre premier cours.
+
+### Linux
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get install python3-virtualenv python3
+$ sudo apt-get install gcc g++ python3-dev
+```
+
+
+### Windows, MacOS
+
+Pour windows le plus simple est de télécharger Anaconda qui est un produit commercial offrant une distribution de pyhton packagé.
+Vous la trouverez [ici](https://www.anaconda.com/products/distribution), il suffit de suivre les instruction pour l'installer.
+
+### Google Colab
+
+Pour les personnes qui n'auraient pas de PC portable, vous pouvez créer un compte Doogle Drive.
+Depuis Google Drive vous pourrez ouvrir un Google Colab qui n'est rien d'autre qu'un notebook en ligne utilisant des ressources gratuites de google.
+Un tuto pour utiliser [Google Colab](https://machinelearningmastery.com/google-colab-for-machine-learning-projects/#:~:text=To%20create%20your%20Google%20Colab,on%20More%20%E2%96%B7%20Google%20Colaboratory.)
+
+
+
+# Evaluation du cours

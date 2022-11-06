@@ -4,22 +4,22 @@
 </p>
 
 #### Table of Contents
-[1. Préambule](#Etapes-d'un-projet-Data)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Iris flower ](#)<br>
+[1. Préambule](#1-pr%C3%A9ambule)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Iris flower ](#11-iris-flower)<br>
 
-[2. Support Vecteur Machine](#)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Presentation intuitive d'un SVM](#)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Calcul de la marge ](#)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Maximisation de la marge](#)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.4 SVM LINEAIRE, HARDS MARGING VS SOFT MARGIN CLASSIFCATION](#)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.5 SVM non liénaire](#)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.5.1 Polynomial Kernel](#)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.5.2 Similarity Features](#)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.6 Classification Multiclass pour les SVM](#)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.6.1 Application classication multiclass, dataset MNIST ](#)<br>
+[2. Support Vecteur Machine](#2-support-vecteur-machine)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Presentation intuitive d'un SVM](#21-presentation-intuitive-dun-svm)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Calcul de la marge ](#22-calcul-de-la-marge)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Maximisation de la marge](#23-maximisation-de-la-marge)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.4 SVM LINEAIRE, HARDS MARGING VS SOFT MARGIN CLASSIFCATION](#24-svm-lineaire-hards-marging-vs-soft-margin-classifcation)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.5 SVM non liénaire](#25-svm-non-li%C3%A9naire)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.5.1 Polynomial Kernel](#251-polynomial-kernel)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.5.2 Similarity Features](#252-similarity-features)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.6 Classification Multiclass pour les SVM](#26-classification-multiclass-pour-les-svm)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2.6.1 Application classication multiclass, dataset MNIST ](#261-application-classication-multiclass-dataset-mnist)<br>
 
-[3. SVM pour la régression](#)<br>
-[4. Récapitulatif](#)<br>
+[3. SVM pour la régression](#3-svm-pour-la-r%C3%A9gression)<br>
+[4. Récapitulatif](#4-r%C3%A9capitulatif)<br>
 
 
 ## 1-Préambule
@@ -360,6 +360,7 @@ scaled_svm_clf3.fit(X, y)
 Pour les autres hyperparamtres fixés, une augmentation de C permet de diminuer la taille des marges. 
 Plus la taille de la marge sera faible plus il sera compliqué de généraliser pour le modèle
 <br>
+<br>
 ℹ️ Le SVM linéaire est également disponible à travers la fonction **SGDClassifier** de sklearn. La différence essentielle provient de l'optimiseur utilisé. Ici la fonction utilise une descente de gradient qui peut s'avérer utile dans le cas de dataset avec beaucoup de ligne (n grand)
 
 On l'utilise de la même manière
@@ -502,7 +503,8 @@ svm.fit(X, y)
 <br>
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/img/fig_11_svm_no_lineaire_hyperpara.png" alt="fig_11_svm_no_lineaire_hyperpara" style="width:1000px;"/>
 
-La facon la plus simple de trouver les hyperparamètres adéquats et de réaliser un *grid search*. Nous verrons en TD comment l'implémenter avec sklearn
+La facon la plus simple de trouver les hyperparamètres adéquats et de réaliser un *grid search*.<br>
+Nous verrons en TD comment l'implémenter avec sklearn
 
 ### 2.5.2-Similarity Features
 
@@ -562,7 +564,7 @@ svm.fit(X, y)
 
 ```
 
-Notez également que gamma comme C est un hyperparamètre permettant de régulariser le modèle.
+Notez également que gamma comme C est un hyperparamètre permettant de régulariser le modèle.<br>
 Si votre modèle est en *overfitting* pensez à réduire gamma/C et inversement s'il est en *underfitting*
 
 <u>Graphique N°13 : Frontière de décision et similarity features </u>
@@ -603,16 +605,16 @@ Malheureusement les SVM n'en font pas partie.
 
 Pour les ustiliser lors de classifications multiclasse, nous devons trouver une parade!
 
-#### Exemple, classification de chiffre manuscrit
+### Exemple, classification de chiffre manuscrit
 
-##### Contexte
+#### Contexte
 Imaginons qu'on nous donne un dataset contenant des images. Chaque image représente un chiffre manuscrit entre 0 et 9.
 On nous demande de créer un modèle basé sur un SVM afin de classifier ces chiffres manuscrits (l'humain qui le fait habituellement en à marre de le faire).
 
 Le data scientist en charge du projet à bien compris la problématique mais sait aussi qu'un SVM ne permet pas de faire de la classification multiclasse...
 Il cherche alors une stratégie pour répondre parfaitement à la commande.
 
-##### Solution
+#### Solution
 Sa **premiere intuition** est de **découper le problème en 10 problèmes distincts.**
 10 classifications binaires où il va chercher à identifier les 1 VS les autres puis les 2 VS les autres etc.
 Après les avoir entrainés, il obtiendra le score de décision grâce à sklearn et prendra celui qui le maximise.
@@ -633,7 +635,7 @@ Leur principal défaut est de faire exploser le nombre de modèles à entrainer.
 
 
 L'implémentation avec sklearn est encore une fois chose facile
-##### OVR
+#### OVR
 
 ```python
 #Import OVO, OVR

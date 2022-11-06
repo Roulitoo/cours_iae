@@ -1,6 +1,7 @@
-<center><h1>SVM sous Python</h1></center>
+<center><h1> SVM sous Python</h1></center>
+<p align="center">
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/Logo_IAE_horizontal.png" alt="Logo IAE.png" style="width:200px;"/>
-
+</p>
 #### Table of Contents
 [1. Préambule](#Etapes-d'un-projet-Data)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Iris flower ](#)<br>

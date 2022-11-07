@@ -64,8 +64,12 @@ Un tuto pour utiliser [Google Colab](https://machinelearningmastery.com/google-c
 
 ### Github
 
-Chaque étudiant devra créer un compte github qui lui permettra de récupérer les cours sur mon repository.
+Chaque étudiant devra créer un compte github qui lui permettra de récupérer les cours et td sur mon repository.
 Ce sera également l'endroit où vous déposerez votre projet qui sera évalué à la fin du module.
+
+Aucune formation ne sera faite pour github. Votre devrez être en mesure de vous former de votre coté à ce logiciel très utile pour votre vie 
+professionnelle.
+
 
 # Evaluation du cours
 

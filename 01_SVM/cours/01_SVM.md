@@ -630,6 +630,7 @@ Leur principal défaut est de faire exploser le nombre de modèles à entrainer.
 
 - **One versus rest** : On ramène un problème avec $N_{class}$ à $N$ classification binaire. On compare une classe à $N-1$ classe.<br>
 <br>
+
 - **One versus one** : On ramène le problème avec $N_{class}$ à $N\times\frac{N-1}{2}$ classification binaire. Cette fois on teste toutes les combinaisons de N possibles divisées par 2. (Classification $N_1 | N_2$ est la même que $N_2 | N_1$)
 
 

@@ -24,7 +24,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[2.4 Loss or metric function](#24-loss-function-or-metric-function)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[2.5 Hyperparamètres](#25-hyperpam%C3%A8tre)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[2.6 Grid search](#26-grid-search)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[2.7 Computational complexity](#27-computational-complexity)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.7 Learning curve](#27-learning-curve)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.8 Computational complexity](#28-computational-complexity)<br>
 
 
 
@@ -626,7 +627,7 @@ Généralement on représente cette technique avec un graphique qui ressemble à
 
 <u>Graphique N°7 :Visualisation learning curve</u>
 
-<img src="test" alt="learning_curve_7.png" style="width:1000px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/learning_curve_7.png" alt="learning_curve_7.png" style="width:600px;"/>
 
 Pour implémenter ce type de graphique nous utilisons encore une fois [sklearn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html)
 
@@ -677,7 +678,7 @@ plt.show()
 ```
 
 
-## 2.-Computational complexity 
+## 2.8-Computational complexity 
 
 En machine learning, le $computational complexity$ ou complexité de l'algorithme est le montant de ressources nécessaires pour utiliser un modèle.
 On distingue le temps d'entrainement d'un modèle et le temps de prédiction d'un modèle déja entrainé.

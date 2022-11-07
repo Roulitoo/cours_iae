@@ -419,7 +419,7 @@ $x_{n+1} = x_n -\eta*f'(x_n)$
 
 <u>Graphique N°5 :Exemple descente de gradient</u>
 
-<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_grad_exemple_5.png" alt="fonction_exemple_descente_grad_6.png" style="width:500px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_grad_exemple_5.png" alt="fonction_exemple_descente_grad_5.png" style="width:500px;"/>
 
 
 Successivement la valeur de $\theta$ se rapproche de la valeur de $x=\frac{1}{3}$ qui minise la fonction.
@@ -502,9 +502,9 @@ Il existe 3 types de grid search :
 
 On peut voir graphiquement le résultat des 2 approches.
 
-<u>Graphique N°5 :Visualisation grid search avec 2 hyperparamètres</u>
+<u>Graphique N°6 :Visualisation grid search avec 2 hyperparamètres</u>
 
-<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/grid_search_6.png" alt="gris_search.png" style="width:1000px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/grid_search_6.png" alt="gris_search_6.png" style="width:1000px;"/>
 
 Le random search donne généralement de meilleure performance mais il est aussi beaucoup plus couteux en temps de calcul... A vous d'arbitrer.
 
@@ -610,7 +610,74 @@ print(model_bay.best_estimator_)
 > Doc implémentation bayesian grid search  
 >https://scikit-optimize.github.io/stable/index.html
 
-## 2.7-Computational complexity 
+## 2.7-Learning curve
+
+En modélisation on dit souvent que "plus on a de data plus le modèle sera précis". Cette affirmation est vraie, augmenter le nombre de data améliore généralement les performance des modèles.<br>
+<br>
+Cependant, il existe une quantité de data à partir duquel le modèle arrête d'apprendre. Autrement dit rajouter des données ne sert à rien à part augmenter le temps de calcul!
+Cela peut venir du fait qu'il existe un parttern simple dans vos données et le modèle apprend très vite ou malheuresement que vos données ne permettent de pas d'expliquer le phénomène étudié.
+
+Une manière de visualiser cette relation quantité de data et performance du modèle est d'utiliser des learning curve.
+
+On itère plusieurs modélisations du même modèle sans faire varier les hyperparamètres mais on entraine systématiquement avec un peu plus de data pour voir l'impact sur la qualité du modèle.
+
+Généralement on représente cette technique avec un graphique qui ressemble à celui ci-dessous :
+
+
+<u>Graphique N°7 :Visualisation learning curve</u>
+
+<img src="test" alt="learning_curve_7.png" style="width:1000px;"/>
+
+Pour implémenter ce type de graphique nous utilisons encore une fois [sklearn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html)
+
+```python
+#Ploting learnin curve
+from sklearn.model_selection import learning_curve
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+#Split in train and test
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, stratify=y, random_state=1)
+#Model
+lr = LogisticRegression(max_iter = 1000 , random_state= 42)
+
+# Use learning curve to get training and test scores along with train sizes
+#Learning curve function with train_sizes = découpage du dataset en 10 de 10% à 100%
+train_sizes, train_scores, test_scores = learning_curve(estimator=lr, 
+                                                        X=X_train, 
+                                                        y=y_train,
+                                                        cv=10, 
+                                                        train_sizes=np.linspace(0.1, 1.0, 10),
+                                                       )
+
+#
+# Trop de fluctuation dans le modèle, on calcule la moyenne des métriques
+#
+train_mean = np.mean(train_scores, axis=1)
+train_std = np.std(train_scores, axis=1)
+test_mean = np.mean(test_scores, axis=1)
+test_std = np.std(test_scores, axis=1)
+#
+# Plot the learning curve
+#
+plt.plot(train_sizes, train_mean, color='blue', marker='o', markersize=5, label='Training Accuracy')
+plt.fill_between(train_sizes, train_mean + train_std, train_mean - train_std, alpha=0.15, color='blue')
+plt.plot(train_sizes, test_mean, color='green', marker='+', markersize=5, linestyle='--', label='Validation Accuracy')
+plt.fill_between(train_sizes, test_mean + test_std, test_mean - test_std, alpha=0.15, color='green')
+plt.title('Learning Curve')
+plt.xlabel('Training Data Size')
+plt.ylabel('Model accuracy')
+plt.grid()
+plt.legend(loc='lower right')
+plt.show()
+
+```
+
+
+## 2.-Computational complexity 
 
 En machine learning, le $computational complexity$ ou complexité de l'algorithme est le montant de ressources nécessaires pour utiliser un modèle.
 On distingue le temps d'entrainement d'un modèle et le temps de prédiction d'un modèle déja entrainé.

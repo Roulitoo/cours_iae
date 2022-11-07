@@ -25,7 +25,7 @@ Si vous avez une remarque ou question, n'hésitez pas à me taguer directement a
 
 
 
-L'obectif du cours est de vous fournir une compréhension théorique et pratique des SVM et Réseaux de Neurones (ANN).
+L'objectif du cours est de vous fournir une compréhension théorique et pratique des SVM et Réseaux de Neurones (ANN).
 Chaque modèle sera présenté en cours avant de passer à la partie pratique en python.
 Vous aurez également des travaux à faire à la maison pour poursuivre votre apprentissage.
 
@@ -35,8 +35,8 @@ Vous aurez également des travaux à faire à la maison pour poursuivre votre ap
 
 ## Python
 
-Vous devez déja voir une première expérience en programmation avec Python. 
-Gérer des données avec python avec les packages usuelles pour la data science doit être facile.
+Vous devez déja avoir une première expérience en programmation avec Python. 
+Gérer des données avec python avec les packages usuels pour la data science doit être facile.
 
 ⚠️ Si vous ramenez votre ordinateur perso vous devez installer Python avant notre premier cours.
 
@@ -51,8 +51,8 @@ $ sudo apt-get install gcc g++ python3-dev
 
 ### Windows, MacOS
 
-Pour windows le plus simple est de télécharger Anaconda qui est un produit commercial offrant une distribution de pyhton packagé.
-Vous la trouverez [ici](https://www.anaconda.com/products/distribution), il suffit de suivre les instruction pour l'installer.
+Pour Windows le plus simple est de télécharger Anaconda qui est un produit commercial offrant une distribution de pyhton packagée.
+Vous la trouverez [ici](https://www.anaconda.com/products/distribution), il suffit de suivre les instructions pour l'installer.
 
 ### Google Colab
 
@@ -60,6 +60,13 @@ Pour les personnes qui n'auraient pas de PC portable, vous pouvez créer un comp
 Depuis Google Drive vous pourrez ouvrir un Google Colab qui n'est rien d'autre qu'un notebook en ligne utilisant des ressources gratuites de google.
 Un tuto pour utiliser [Google Colab](https://machinelearningmastery.com/google-colab-for-machine-learning-projects/#:~:text=To%20create%20your%20Google%20Colab,on%20More%20%E2%96%B7%20Google%20Colaboratory.)
 
+> Je ne connais pas les serveurs de l'université de Nantes, Google Colab permet de s'exonerer des contraintes du système d'administration.
 
+### Github
+
+Chaque étudiant devra créer un compte github qui lui permettra de récupérer les cours sur mon repository.
+Ce sera également l'endroit où vous déposerez votre projet qui sera évalué à la fin du module.
 
 # Evaluation du cours
+
+A venir, concertation avec vous.

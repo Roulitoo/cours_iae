@@ -25,7 +25,7 @@
 ## 1-Préambule
 
 Connaissez-vous le fameux jeu de données IRIS produit par Ronald Fisher en 1936??  
-Si non, on nous allons y remédier!  
+Si non, nous allons y remédier!  
 
 Nous pouvons accéder à ce dataset depuis sklearn avec le code suivant :
 

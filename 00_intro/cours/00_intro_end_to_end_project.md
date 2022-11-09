@@ -283,7 +283,7 @@ Les 2 permettent d'exprimer les colonnes numériques dans une même unités, am�
 
 ### Normalisation
 
-La normalisation est le fait de transformation vos features dans une échelle [0,1]. On l'appelle parfois *min-max scaling*.
+La normalisation est le fait de transformation vos features dans **une échelle [0,1]**. On l'appelle parfois *min-max scaling*.
 Sa formule est la suivante
 
 $X_{norm} = \frac{X-X_{min}}{X_{max}-X_{min}}$
@@ -298,7 +298,7 @@ print(scaler.fit_transform(data))
 
 ### Standardisation
 
-La standardisation est une technique qui permet quant à elle de transformer nos colonnes en variable avec une moyenne de 0 et un écart type de 1.  
+La standardisation est une technique qui permet quant à elle de transformer nos colonnes en variable avec une **moyenne de 0 et un écart type de 1.**  
 Les colonnes transformées auront donc les mêmes paramètres de distribution.
 La standardisation présente des avantages quand il existe des outliers, comme on utilise pas la valeur Min et Max, la technique y est moins sensible!  
 

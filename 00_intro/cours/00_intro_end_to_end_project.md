@@ -174,8 +174,8 @@ Dans cette partie vous allez essayer de faire ressortir les *insights* de vos do
 
 ## 1.5-Explorer des modèles et déterminer une short-list 
 
-1) Entrainer des modèles avec les hyperparamètres par défaut  
-     *Des modèles avec des paradigmes différents (regressions, arbres, svm, neural net, xgboost,...*
+**1)** Entrainer des modèles avec les hyperparamètres par défaut  
+&nbsp;&nbsp;&nbsp; *Des modèles avec des paradigmes différents (regressions, arbres, svm, neural net, xgboost,...*
      
      
 **2** Mesurer les performances de chaque modèle  

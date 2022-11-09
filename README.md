@@ -13,8 +13,10 @@ Chaque repos est structuré de la manière suivante
 ┃
 ┣ 📁 chapitre_cours
 ┃  ┣  📁code┣ 🗒️code_cours
-┃  ┃         ┣ 🗒️code_tp
-┃  ┃        
+┃  ┃         
+┃  ┣  📁 tp ┣ 🗒️ tp.ipynb
+┃  ┃         ┣ 🗒️tp_correction.ipynb
+┃  ┃
 ┃  ┣  📁cours┣ 🗒️cours.md
 ┃  ┃          ┣ 🗒️cours.pdf
 ┃  ┣  📁 img

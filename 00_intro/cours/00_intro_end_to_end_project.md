@@ -208,7 +208,7 @@ Dans cette partie vous allez essayer de faire ressortir les *insights* de vos do
     
 **2** Si vos modèles offres des performances faibles, testez les [modèles ensemblistes](https://scikit-learn.org/stable/modules/ensemble.html)
 
-**3** Quand votre modèle est suffisament performant sur le **training test**, mesurer sa performance avec le **test set**
+**3** Quand votre modèle est suffisament performant sur le **training set**, mesurer sa performance avec le **test set**
 
 ## 1.7-Présenter votre solution
 

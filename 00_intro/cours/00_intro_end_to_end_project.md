@@ -407,7 +407,7 @@ Nous avons une fonction  $f(x) = 3x^2 -2x +5$ et nous souhaitons minimiser cette
 
 En dimension le vecteur est de taille 1, donc on calcule uniquement une dérivée
 
-$f'(x) = 6x -2x$
+$f'(x) = 6x -2$
  
 **Etape 2 : On initialise une valeur de $x$ par défaut et une valeur pour le learning rate**
 

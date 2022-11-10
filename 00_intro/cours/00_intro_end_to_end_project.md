@@ -50,9 +50,9 @@ Qui est impacté par ce problème?
 
 ##### Echangez, parler, identifier les personnes qui pourront répondre à vos questions
 Quand on débute on peut avoir envie d'aller directement à la solution mais définir le problème est généralement le fondement du projet.   
-Sauf si vous êtes déja expert dans le domaine d'application du projet, pensez à interroger les personnes qui gravitent autour du problème et ne vous lancez pas directement dans les données!
+Sauf si vous êtes déja expert dans le domaine d'application, pensez à interroger les personnes qui gravitent autour du problème et ne vous lancez pas directement dans le traitement des données!
 
-Ce seront vos interpréteurs clés et ils vous suivront le long du projet. **Plus tôt vous intégrerez les utilisateurs finaux de votre projet plus vite vous verrez si vous êtes éloigné ou non de leurs attentes**
+Ce seront vos interpréteurs clés et ils vous suivront le long du projet. **Plus tôt vous intégrerez les utilisateurs finaux de votre projet plus vite vous verrez si vous êtes éloignés ou non de leurs attentes**
 
 
 
@@ -64,7 +64,7 @@ Ce seront vos interpréteurs clés et ils vous suivront le long du projet. **Plu
 A la fin de l'étape de définition du problème vous devriez être capable de :
 
 - Définir le **PROBLEME** que vous réglerez et le **BESOIN** auquel il répond
-- Mesurer avec des chiffres le problème
+- Mesurer avec quantitativement/qualitativement le problème
 - Expliquer votre solution et ses impactes
 - Découper votre solution en plusieurs étapes
 
@@ -130,7 +130,7 @@ Dans cette partie vous allez essayer de faire ressortir les *insights* de vos do
 <br>
 **8** Réfléchir à comment résoudre le problème en tant qu'humain sans coder      
 &nbsp;&nbsp;&nbsp;Quelles informations utiliseriez-vous? Comment le feriez-vous?  
-&nbsp;&nbsp;&nbsp;Après l'avoir fait, essayer de transposer ca en code  
+&nbsp;&nbsp;&nbsp;Après l'avoir fait, essayer de transposer votre approche en code  
 **9** Commencer le *feature engineering* pour créer des nouvelles features  
 <br>
 **10** Retourner à l'étape 2 s'il manque des données  
@@ -249,7 +249,7 @@ Nous avons un data set contenant 1 million d'opérations bancaires. La fraude é
 
 Si nous entrainons un modèle de machine learning pour une classification binaire sur ce projet, il sera incapable d'apprendre ce qu'est une fraude car nous ne lui présenterons pas suffisamment d'exemple pour qu'il arrive à définir une fraude.
 
-Imaginons tout de même que nous entrainions tout de même un modèle logit sur ce dataset.  
+Imaginons tout de même que nous entrainions une rehression logistique sur ce dataset.  
 **Le modèle donne une accuracy de 89%** 
 > Est-ce une bonne nouvelle, le modèle est-il pertinent?
 

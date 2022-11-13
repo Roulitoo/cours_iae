@@ -110,7 +110,7 @@ Imaginons maintenant qu'on nous demande de tracer une fonction permettant de sé
 
 
 Nous cherchons une fonction de la forme :<br>
-$f(x) = X^T\beta = x1\beta1 + x2\beta2 + ... + \beta0 =0$
+$f(x) = X^T\beta = \beta_0 + x_1\beta_1 + x_2\beta_2 + ... + x_n\beta_n =0$
 
 Cette fonction de permettre de déterminer :
 

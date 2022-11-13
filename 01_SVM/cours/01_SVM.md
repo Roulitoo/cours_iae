@@ -104,7 +104,7 @@ Pour faire simple nous utiliserons seulement 2 features (plus simple à représe
 Nous décidons de conserver la longueur du petal et la largeur du petal( colonnes 3 & 4) 
 
 🤔  
-Imaginons maintenant qu'on nous demande de tracer une fonction permettant de séparer nos 2 nuages de point par une frontière.  
+Imaginons maintenant qu'on nous demande de tracer une fonction permettant de séparer nos 2 nuages de points par une frontière.  
 **Comment feriez-vous?**
 
 

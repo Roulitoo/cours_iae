@@ -303,7 +303,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import LinearSVC
 iris = datasets.load_iris()
 X = iris["data"][:, (2, 3)] # petal length, petal width
-y = (iris["target"] == 2).astype(np.float64) # Iris virginica
+y = (iris["target"] == 2).astype('int32') # Iris virginica
 
 # Code
 

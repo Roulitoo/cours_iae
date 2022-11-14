@@ -3,6 +3,7 @@
 ## TO DO
 
 **24/11/2022** :
+- Prendre un Dataset de votre choix et réaliser une analyse statistique + visualisation en python
 - Lire le tuto [kaggle](https://www.kaggle.com/code/prashant111/svm-classifier-tutorial/notebook) sur les SVM
 - Tester le jupyternotebook [01_SVM_demo](https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/code/01_SVM_DEMO.ipynb) pour la classification multiclass
 

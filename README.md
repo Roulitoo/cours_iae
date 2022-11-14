@@ -1,5 +1,12 @@
 # Cours IAE Nantes
 
+## TO DO
+
+**24/11/2022** :
+- Lire le tuto [kaggle](https://www.kaggle.com/code/prashant111/svm-classifier-tutorial/notebook) sur les SVM
+- Tester le jupyternotebook [01_SVM_demo](https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/code/01_SVM_DEMO.ipynb) pour la classification multiclass
+
+
 Ce reposiroty contient les cours *SVM et Réseaux de neurones* pour les étudiants du Master 2 ECAP, IAE NANTES.  
 Le volume horaire de ce cours est de 18h et sera réparti en 5 séances de CM/TP.
 

@@ -17,7 +17,7 @@
 ##### Tester le jupyer démo mnist (FACULTATIF)
 - Tester le jupyternotebook [01_SVM_demo](https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/code/01_SVM_DEMO.ipynb) pour la classification multiclass
 ##### Finir le TD1 (OBLIGATOIRE)
-- Finir TD 01
+- Finir TD 01, correction Q1 à Q6 dispo [ici](https://github.com/Roulitoo/cours_iae/blob/fe4eccdbf90956f144d59250de2f1698571d00ad/01_SVM/td/code/01_SVM_TD_CORRIGE_Q1_Q6.ipynb)
 
 ## ⚠️Problème pour importer jupyter notebook depuis Github⚠️
 

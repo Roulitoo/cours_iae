@@ -3,12 +3,38 @@
 ## TO DO
 
 **24/11/2022** :
+
+##### S'améliorer en python pour le traitement de données (OBLIGATOIRE)
 - Prendre un Dataset de votre choix et réaliser une analyse statistique + visualisation en python
+  - Analyse univariée (moyenne, variance, écart-type, min max, outliers, na value,...) + représentation graphique avec matplotlib ou seaborn **Ne pas utiliser la fonction .describe()**
+  - Analyse bivariée( corrélations, graphiques adaptés pour quanti/quanti quanti/quali, quali/quali)
+  - Une analyse multivariée au choix (ACP ou ACM)
+  - Réaliser une présentation avec un jupyter notebook code + sortie graphique + commenter en markdown
+  
+**2 ou 3 personnes passeront pour présenter leur travail en début de cours.**
+##### Progresser avec les SVM sous python (FACULTATIF)
 - Lire le tuto [kaggle](https://www.kaggle.com/code/prashant111/svm-classifier-tutorial/notebook) sur les SVM
+##### Tester le jupyer démo mnist (FACULTATIF)
 - Tester le jupyternotebook [01_SVM_demo](https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/code/01_SVM_DEMO.ipynb) pour la classification multiclass
+##### Finir le TD1 (OBLIGATOIRE)
 - Finir TD 01
 
+## ⚠️Problème pour importer jupyter notebook depuis Github⚠️
 
+La solution est simple. Il suffit *d'enregistrer le lien sous...* le fichier **RAW** et non pas le IPYNB directement.
+Cliquer sur [lien](https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/td/code/01_SVM_TD.ipynb) pour aller récupérer le TD1.
+
+Puis faites clique droit sur **RAW** et *enregistrer le lien sous...*. Comme sur la photo ci-dessous
+<br>
+<p align='center'>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/import_jupyter_noteook.png" style="width:600px;"/>
+</p>
+
+Enregister le fichier dans un répertoire où vous pouvez accéder depuis jupyter notebook! Après ca le tour est joué :)
+
+> Merci de me notifier si vous avez encore des problèmes pour importer les jupyter notebook provenant de Github
+
+## Information cours
 Ce reposiroty contient les cours *SVM et Réseaux de neurones* pour les étudiants du Master 2 ECAP, IAE NANTES.  
 Le volume horaire de ce cours est de 18h et sera réparti en 5 séances de CM/TP.
 

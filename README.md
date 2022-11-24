@@ -2,22 +2,19 @@
 
 ## TO DO
 
-**24/11/2022** :
+Prochain cours à définir. Pas disponible pour le mercredi 30/11/2022.
 
-##### S'améliorer en python pour le traitement de données (OBLIGATOIRE)
-- Prendre un Dataset de votre choix et réaliser une analyse statistique + visualisation en python
-  - Analyse univariée (moyenne, variance, écart-type, min max, outliers, na value,...) + représentation graphique avec matplotlib ou seaborn **Ne pas utiliser la fonction .describe()**
-  - Analyse bivariée( corrélations, graphiques adaptés pour quanti/quanti quanti/quali, quali/quali)
-  - Une analyse multivariée au choix (ACP ou ACM)
-  - Réaliser une présentation avec un jupyter notebook code + sortie graphique + commenter en markdown
+Pour notre prochain cours ensemble voici la liste des taches à faire:
+
+(**Obligatoire**)
+- **Reprendre le TD N°1** avec la correction et appliquer le même cheminement pour un dataset que vous choisissez!
+  L'objectif est de réaliser une classifcation binaire avec un SVM en suivant les grandes étapes d'optimisation d'un modèle.
   
-**2 ou 3 personnes passeront pour présenter leur travail en début de cours.**
-##### Progresser avec les SVM sous python (FACULTATIF)
-- Lire le tuto [kaggle](https://www.kaggle.com/code/prashant111/svm-classifier-tutorial/notebook) sur les SVM
-##### Tester le jupyer démo mnist (FACULTATIF)
-- Tester le jupyternotebook [01_SVM_demo](https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/code/01_SVM_DEMO.ipynb) pour la classification multiclass
-##### Finir le TD1 (OBLIGATOIRE)
-- Finir TD 01, correction Q1 à Q6 dispo [ici](https://github.com/Roulitoo/cours_iae/blob/fe4eccdbf90956f144d59250de2f1698571d00ad/01_SVM/td/code/01_SVM_TD_CORRIGE_Q1_Q6.ipynb)
+  Intérogation de 1-2 personnes pour présenter son travail ;)
+  
+- **Finir le TD N°2 (obligatoire)**
+Avancer au maximun le TD N°2 sur les SVM non linéaires. Travailler en collaboratif pour avancer vite et vous aider entre vous!
+
 
 ## ⚠️Problème pour importer jupyter notebook depuis Github⚠️
 

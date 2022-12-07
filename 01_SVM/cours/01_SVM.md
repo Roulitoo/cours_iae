@@ -4,8 +4,8 @@
 </p>
 
 #### Table of Contents
-[1. Histoire réseaux de neurones](#1-histoire-des-r%C3%A9seaux-de-neurones)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Iris flower ](#11-du-neurone-biologique-au-neurone-artificiel)<br>
+[1. Préambule](#1-pr%C3%A9ambule)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Iris flower ](#11-iris-flower)<br>
 
 [2. Support Vecteur Machine](#2-support-vecteur-machine)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[2.1 Presentation intuitive d'un SVM](#21-presentation-intuitive-dun-svm)<br>

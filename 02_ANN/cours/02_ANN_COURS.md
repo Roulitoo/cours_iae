@@ -345,7 +345,7 @@ $\normalsize Rectified Linear Unit : ReLU(z) = max(0,z)$
 
 Graphique N°8 : [Allure des fonctions d'activations communes](https://miro.medium.com/max/1200/1*ZafDv3VUm60Eh10OeJu1vw.png)
 
-<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/activation_functions_plot_08.png" alt="08_active_function.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/activation_functions_plot_08.png" alt="08_active_function.png" style="width:800px;"/>
 
 ### 3.3-MLP pour la régression
 

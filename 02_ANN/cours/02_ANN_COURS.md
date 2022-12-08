@@ -108,7 +108,7 @@ Si on combine ces 4 formes de logique mathématique nous pouvons déja créer be
 ## 2-Le perceptron
 
 Le perceptron est le modèle de réseaux de neurones le plus simple. Il a été inventé en 1957 par Frank Rosenblatt.<br>
-Il est basé sur un type de neurone légèrement différent de ceux du graphique N°1.<br>
+Il est basé sur un type de neurone légèrement différent de ceux du graphique N°3.<br>
 On le nomme **threshold logic unit(TLU)**
 
 Les intput et output sont ici des nombres et non pas des valeurs binaires (on, off)

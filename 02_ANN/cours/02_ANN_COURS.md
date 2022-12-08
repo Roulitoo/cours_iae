@@ -74,7 +74,7 @@ On peut observer sur l'image N°1 une cellule neurale obtenue dans le cerveau d'
 
 Graphique N°1 : Cellule neurale d'un animal
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/neural_bio_01.png" alt="01_image_neurone.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/neural_bio_01.png" alt="01_image_neurone.png" style="width:600px;"/>
 
 La cellule est composée d'un noyau et un long axon permettant de transmettre l'information avec un faible courant électrique à une synapse qui ensuite, libère une substance chimique appelée neurotransmetteur et qui à son tour sera reçu par un neurone et ce nouveau neurone transmettra une information via une impulsion électrique.
 
@@ -83,7 +83,7 @@ Sur l'image N°2 on peut observer un plan en coupe représentant l'interconnexio
 
 Graphique N°2 : Connexion entre neurones
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/multi_neural_bio_02.png" alt="02_image_connect_neural.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/multi_neural_bio_02.png" alt="02_image_connect_neural.png" style="width:600px;"/>
 
 Garder à l'esprit la structure de cette image qui représente des neurones linéairement maillés.
 
@@ -93,7 +93,7 @@ Logique de computation des neurones, travaux de 1950. Traduction d'un neurone bi
 
 Graphique N°3: Logique formelle des neurones
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/neural_formal_03.png" alt="03_logic_neural.png" style="width:800px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/neural_formal_03.png" alt="03_logic_neural.png" style="width:800px;"/>
 
 On dénombre **4 cas formulés par Warren McCulloch et Walter Pitts en 1943.**
 
@@ -126,7 +126,7 @@ On note $h_w(x) = step(z)$ la *step function*
 
 Graphique N°4 : Architecture d'un perceptron
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/percetron_04.png" alt="04_perceptron_archi.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/percetron_04.png" alt="04_perceptron_archi.png" style="width:600px;"/>
 
 
 ### 2.1-Fonction d'activation
@@ -156,7 +156,7 @@ Suivant le nombre de neurones dans la couche de sortie nous pouvons nous ramener
 
 Graphique N°5 : Perceptron architecture pour multiclass 
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/perceptron_05.png" alt="05_perceptron_multi.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/perceptron_05.png" alt="05_perceptron_multi.png" style="width:600px;"/>
 
 ### 2.2-Définition perceptron
 
@@ -259,7 +259,7 @@ Sur le graphique N°, on peut observer l'architecture du perceptron stacké avec
 
 Graphique N°6 : Perceptron pour problème XOR
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/xor_problem_06.png" alt="06_XOR.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/xor_problem_06.png" alt="06_XOR.png" style="width:600px;"/>
 
 🛈 On nomme ce type d'architecture MLP (multi layer perceptron).
 
@@ -276,7 +276,7 @@ Chaque couche doit contenir un biais **sauf la couche de sortie**
 
 Graphique N°7 : Architecture d'un réseau de neurone multicouche
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/mlp_07.png" alt="07_MPL.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/mlp_07.png" alt="07_MPL.png" style="width:600px;"/>
 
 💡
 > Graphiquement on observe que tous les flux vont dans une unique direction. On parle ici de **feedforward neural network**.
@@ -345,7 +345,7 @@ $\normalsize Rectified Linear Unit : ReLU(z) = max(0,z)$
 
 Graphique N°8 : [Allure des fonctions d'activations communes](https://miro.medium.com/max/1200/1*ZafDv3VUm60Eh10OeJu1vw.png)
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/activation_functions_plot_08.png" alt="08_active_function.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/activation_functions_plot_08.png" alt="08_active_function.png" style="width:600px;"/>
 
 ### 3.3-MLP pour la régression
 
@@ -626,7 +626,7 @@ Pour keras la verbosité du modèle est très intéressante car vous pouvez exam
 
 Graphique N°9 : Output keras
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/output_model_keras_09.png" alt="output_model_keras_09.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/output_model_keras_09.png" alt="output_model_keras_09.png" style="width:600px;"/>
 
 
 Définition dans le cadre des réseaux de neurones :
@@ -669,7 +669,7 @@ On obtient le graphique suivant
 
 Grapnique N°10 : Learning curve modèle ANN en fonction des Epochs
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/learning_curve_keras_11.png.png" alt="learning_curve_keras_11.png.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/learning_curve_keras_11.png.png" alt="learning_curve_keras_11.png.png" style="width:600px;"/>
 
 
 # Comment validation curve
@@ -769,7 +769,7 @@ Les modèles deep se prettent mieux aux données avec des patterns complexes et 
 
 Graphique N°11 : Wide and Deep neural model schema
 
-<img src="https://github.com/Roulitoo/private_iae/blob/master/02_ANN/img/wide_deep_10.png" alt="wide_deep_11.png" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/02_ANN/img/wide_deep_10.png" alt="wide_deep_11.png" style="width:600px;"/>
 
 
 Pour implementer ce type de modèle avec keras il faut maintenant utiliser l'API fonctionnelle.

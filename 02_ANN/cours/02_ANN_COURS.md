@@ -182,7 +182,7 @@ Le premier modèle du perceptron développé en 1957 par **Frank Rosenblatt** s'
 La règle de *Hebb* s'appuie sur une étude biologique de nos neurones et à déterminer que quand un neurone en déclenche un autre leur lien se renforce.<br>
 
 C'est exactement sur ce principe que Frank Rosenblatt développe sa règle d'apprentissage pour son perceptron.
-Le perceptron renforce le lien entre ses neurones qui aides à réduire l'erreur de prédiction, formellement cela se définit comme suit:
+Le perceptron renforce **le lien entre ses neurones qui aides à réduire l'erreur de prédiction**, formellement cela se définit comme suit:
 
 Equation N°6: Règle d'apprentissage du perceptron
 

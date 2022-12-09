@@ -7,7 +7,7 @@
 - Trouver une base de données pour le projet noté. Minimun 5000 observations.<br>
   A valider avec moi en séance.
   
-- Réaliser le TD N°1 disponible ici . C'est uniquement la reprise des éléments du cours des réseaux de neurones.
+- Réaliser le TD N°1 disponible [ici](https://github.com/Roulitoo/cours_iae/tree/master/02_ANN/td) . C'est uniquement la reprise des éléments du cours des réseaux de neurones.
 
 
 ## ⚠️Problème pour importer jupyter notebook depuis Github⚠️

@@ -2,18 +2,12 @@
 
 ## TO DO
 
-Prochain cours à définir. Pas disponible pour le mercredi 30/11/2022.
+16/12/2022
 
-Pour notre prochain cours ensemble voici la liste des taches à faire:
-
-(**Obligatoire**)
-- **Reprendre le TD N°1** avec la correction et appliquer le même cheminement pour un dataset que vous choisissez!
-  L'objectif est de réaliser une classifcation binaire avec un SVM en suivant les grandes étapes d'optimisation d'un modèle.
+- Trouver une base de données pour le projet noté. Minimun 5000 observations.<br>
+  A valider avec moi en séance.
   
-  Intérogation de 1-2 personnes pour présenter son travail ;)
-  
-- **Finir le TD N°2 (obligatoire)**
-Avancer au maximun le TD N°2 sur les SVM non linéaires. Travailler en collaboratif pour avancer vite et vous aider entre vous!
+- Réaliser le TD N°1 disponible ici . C'est uniquement la reprise des éléments du cours des réseaux de neurones.
 
 
 ## ⚠️Problème pour importer jupyter notebook depuis Github⚠️

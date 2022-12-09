@@ -101,4 +101,18 @@ professionnelle.
 
 # Evaluation du cours
 
-A venir, concertation avec vous.
+Pour l'évaluation vous devrez me soumettre un projet comportant un fichier .md(markdown) qui contient les commentaires et résultats de votre projet.
+Présentation de vos résutlats, discussion du choix des méthodes, vos analyses, ...
+Il faudra également me joindre un fichier en .py ou .ipynb avec votre code.
+
+Tous ces éléments devront être déposé dans un repo Github à votre nom!
+
+Date de rendu 10 février 23h59h59s. Si vous dépassez cette date ce sera 0 et pas de correction de ma part.
+
+Elements de notation :
+
+- Créer un repos Github pour 1 ou 2 personnes. (2 max par projet) (0 point)
+- Choix d'un dataset que je valide (2 points)
+- Me communiquer votre projet avant le 31 Janvier (1 point bonus)
+- Un fichier .md explique ce que vous avez fait, ce que vous avez essayé, ce qui a marché, ce qui n'a pas marché, et quels sont vos résultats(10 points)
+- Votre fichier avec le code en version .py ou .ipynb réutilisable, lisible avec des commentaires (8 points)

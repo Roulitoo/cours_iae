@@ -311,7 +311,8 @@ On remonte jusqu'à la couche d'entrée avec ce procédé.
 
 **En résumé:**<br>
 L'algorithme rétropropagation du gradient calcule pour chaque instance d'un mini-batch une prédiction avec un forward pass et mesure l'erreur produite.<br>
-En faisant chemin inverse, on mesure la contribution de chaque connexion dans l'erreur produite et enfin, on met à jour les poids de connexion pour réduire l'erreur. 
+En faisant chemin inverse, on mesure la contribution de chaque connexion dans l'erreur produite et enfin, on met à jour les poids de connexion pour réduire l'erreur.<br>
+[Si vouz voulez une vidéo explicative cliquez ici](https://www.youtube.com/watch?v=OgSA7liZMXI&ab_channel=Science4All)
 
 ##### TIPS ⚠️
 Il est important **d'initialiser le poids de chaque connexion de manière aléatoire autrement l'entrainement du modèle va échouer**.<br>

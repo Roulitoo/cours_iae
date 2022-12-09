@@ -42,7 +42,7 @@ Leur conception provient d'une représentation schématique de comment marche no
 
 Les réseaux de neurones sont donc un modèle de machine learning inspiré par le fonctionnement des neurones.<br>
 
-> D'apres [Yann Lecun](https://fr.wikipedia.org/wiki/Yann_Le_Cun), ' Les réseaux de neurones ne prétendent pas plus d'écrire le cerveau qu'un aile d'avion copie celle d'un oiseau'
+> D'apres [Yann Lecun](https://fr.wikipedia.org/wiki/Yann_Le_Cun), ' Les réseaux de neurones ne prétendent pas plus d'écrire le cerveau qu'une aile d'avion copie celle d'un oiseau'
 
 Aujourd'hui ces modèles se sont largement diffusés et sont utilisés pour des problématiques liées au traitement cognitif humain.<br> 
 La majorité de leur domaine d'application a pour but de remplacer des actions humaines.

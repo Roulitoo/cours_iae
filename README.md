@@ -118,6 +118,6 @@ Elements de notation :
 
 - Créer un repos Github pour 1 ou 2 personnes. (2 max par projet) (0 point)
 - Choix d'un dataset que je valide (2 points)
-- Me communiquer votre projet avant le 31 Janvier (1 point bonus)
+- Me communiquer votre projet avant le 31 Janvier (2 point bonus)
 - Un fichier .md explique ce que vous avez fait, ce que vous avez essayé, ce qui a marché, ce qui n'a pas marché, et quels sont vos résultats(10 points)
 - Votre fichier avec le code en version .py ou .ipynb réutilisable, lisible avec des commentaires (8 points)

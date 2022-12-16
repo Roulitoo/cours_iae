@@ -101,13 +101,18 @@ professionnelle.
 
 # Evaluation du cours
 
+**Objectif :**
+Réaliser un projet de machine learning sur un dataset de 5000 observations minimuns.
+Vous devez obligatoirement réaliser une régression ou classification avec les modèles du cours ( SVM et réseaux de neurones).
+
+**Modalité**
 Pour l'évaluation vous devrez me soumettre un projet comportant un fichier .md(markdown) qui contient les commentaires et résultats de votre projet.
 Présentation de vos résutlats, discussion du choix des méthodes, vos analyses, ...
 Il faudra également me joindre un fichier en .py ou .ipynb avec votre code.
 
-Tous ces éléments devront être déposé dans un repo Github à votre nom!
+Tous ces éléments devront être déposé dans un repo Github à votre nom/vos noms!
 
-Date de rendu 10 février 23h59h59s. Si vous dépassez cette date ce sera 0 et pas de correction de ma part.
+Date de rendu **10 février 23h59h59s**. Si vous dépassez cette date ce sera 0 et pas de correction de ma part.
 
 Elements de notation :
 

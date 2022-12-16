@@ -1,13 +1,8 @@
 # Cours IAE Nantes
 
-## TO DO
-
-16/12/2022
-
-- Trouver une base de données pour le projet noté. Minimun 5000 observations.<br>
-  A valider avec moi en séance.
-  
-- Réaliser le TD N°1 disponible [ici](https://github.com/Roulitoo/cours_iae/tree/master/02_ANN/td) . C'est uniquement la reprise des éléments du cours des réseaux de neurones.
+## Livre intéressant pour vous
+Interpréter mes modèles de machine learning!!
+- https://christophm.github.io/interpretable-ml-book/
 
 
 ## ⚠️Problème pour importer jupyter notebook depuis Github⚠️

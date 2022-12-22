@@ -1,5 +1,9 @@
 # Cours IAE Nantes
 
+## Correction TD N°2 ANN au propre
+
+- A venir, je le ferai après les fêtes.
+
 ## Livre intéressant pour vous
 Interpréter mes modèles de machine learning!!
 - https://christophm.github.io/interpretable-ml-book/

@@ -1,32 +1,10 @@
 # Cours IAE Nantes
 
-## Correction TD N°2 ANN au propre
 
-- A venir, je le ferai après les fêtes.
-
-## Livre intéressant pour vous
-Interpréter mes modèles de machine learning!!
-- https://christophm.github.io/interpretable-ml-book/
-
-
-## ⚠️Problème pour importer jupyter notebook depuis Github⚠️
-
-La solution est simple. Il suffit *d'enregistrer le lien sous...* le fichier **RAW** et non pas le IPYNB directement.
-Cliquer sur [lien](https://github.com/Roulitoo/cours_iae/blob/master/01_SVM/td/code/01_SVM_TD.ipynb) pour aller récupérer le TD1.
-
-Puis faites clique droit sur **RAW** et *enregistrer le lien sous...*. Comme sur la photo ci-dessous
-<br>
-<p align='center'>
-<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/import_jupyter_noteook.png" style="width:600px;"/>
-</p>
-
-Enregister le fichier dans un répertoire où vous pouvez accéder depuis jupyter notebook! Après ca le tour est joué :)
-
-> Merci de me notifier si vous avez encore des problèmes pour importer les jupyter notebook provenant de Github
 
 ## Information cours
-Ce reposiroty contient les cours *SVM et Réseaux de neurones* pour les étudiants du Master 2 ECAP, IAE NANTES.  
-Le volume horaire de ce cours est de 18h et sera réparti en 5 séances de CM/TP.
+Ce repo contient les cours *SVM et Réseaux de neurones* pour les étudiants du Master 2 ECAP, IAE NANTES.  
+Le volume horaire de ce cours est de 18h et sera réparti en 7 séances de CM/TP.
 
 Je vous invite à ramener votre ordinateur perso si vous en avez un. Que ce soit pour les CM/TP vous en aurez besoin.
 
@@ -48,14 +26,27 @@ Chaque repos est structuré de la manière suivante
 
 ```
 
-Si vous avez une remarque ou question, n'hésitez pas à me taguer directement avec un [issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). Vous pourrez voir les questions des autres et ma réponse.
-
-
 
 L'objectif du cours est de vous fournir une compréhension théorique et pratique des SVM et Réseaux de Neurones (ANN).
 Chaque modèle sera présenté en cours avant de passer à la partie pratique en python.
 Vous aurez également des travaux à faire à la maison pour poursuivre votre apprentissage.
 
+
+## Comment échanger avec moi
+
+Vous avez 2 possibilités pour échanger avec moi, les *issues* de github et le mail.
+
+### Github issues 
+
+C'est un espace associé au repo qui vous permet de me laisser un message visible par tout le monde.
+Vos problèmes sont généralement les mêmes que ceux de vos collègues, autant mutualiser tout au même endroit.
+
+>Si vous avez une remarque ou question, n'hésitez pas à me taguer directement avec un [issues](https://docs.github.com/fr/issues/tracking-your-work-with-issues/creating-an-issue). Vous pourrez voir les questions des autres et ma réponse.
+
+### Mail
+
+Vous pouvez me contacter avec mon mail perso 📧 roul.benjamin@gmail.com 📧.
+Merci de l'utiliser **uniquement** pour des questions/remarques que vous ne souhaitez rendre accesssible à tout le monde. 
 
 
 # Prérequis
@@ -100,6 +91,15 @@ professionnelle.
 
 # Evaluation du cours
 
+L'évaluation du cours comportera 2 examens:
+
+- Un projet à réaliser en groupe
+- Un qcm pour évaluer les connaissances du cours
+
+
+## Projet
+
+
 **Objectif :**
 Réaliser un projet de machine learning sur un dataset de 5000 observations minimuns.
 Vous devez obligatoirement réaliser une régression ou classification avec les modèles du cours ( SVM et réseaux de neurones).
@@ -120,3 +120,7 @@ Elements de notation :
 - Me communiquer votre projet avant le 31 Janvier (2 points bonus)
 - Un fichier .md explique ce que vous avez fait, ce que vous avez essayé, ce qui a marché, ce qui n'a pas marché, et quels sont vos résultats(10 points)
 - Votre fichier avec le code en version .py ou .ipynb réutilisable, lisible avec des commentaires (8 points)
+
+## QCM
+
+<A définir>

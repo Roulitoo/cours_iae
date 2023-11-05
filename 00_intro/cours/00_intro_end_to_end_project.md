@@ -729,7 +729,7 @@ Les environnements virtuels!!
 
 Comment réaliser cette image en code
 
-```shell
+```powershell
 #Comment créer un venv
 
 ##Windows powershell
@@ -762,7 +762,7 @@ Nous allons utiliser un fichier texte communement appelé requirements.txt qui c
 
 Après pour installer ces versions il suffit de réaliser la commande suivante :
 
-```shell
+```powershell
 #Il faut avoir activé son environnement virtuel
 
 pip install -r requirements.txt

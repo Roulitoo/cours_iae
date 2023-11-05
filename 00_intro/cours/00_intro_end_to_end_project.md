@@ -771,3 +771,26 @@ pip install -r requirements.txt
 
 
 > Nous venons d'illuster la célèbre phrase des data scientist. "Je ne comprends pas, ca marche sur mon pc"
+
+
+## 2.10-Vscode 
+
+
+
+Visual Studio Code, souvent abrégé en **VSCode**, est un éditeur de code source gratuit et open-source développé par Microsoft. Il s'agit d'un outil de développement très populaire auprès des programmeurs du monde entier en raison de sa simplicité, de sa flexibilité et de sa variété d'extensions.
+
+Avec VSCode, vous pouvez développer des applications dans divers langages de programmation. Il offre des fonctionnalités essentielles telles que la coloration syntaxique, la complétion automatique, le débogage intégré, la gestion de versions, et bien plus encore.
+
+Ce logiciel a été conçu pour être léger, rapide et hautement personnalisable, ce qui en fait un choix idéal pour les développeurs de tous niveaux. Que vous travailliez sur des projets Web, des applications mobiles, des scripts ou des projets de données, Visual Studio Code est un outil polyvalent qui vous permet de coder de manière efficace et stylée.
+
+C'est un excellent choix pour les étudiants qui découvrent le monde de la programmation, car il facilite l'apprentissage tout en offrant des fonctionnalités puissantes pour le développement de logiciels.
+
+
+### Extensions à téléchager
+
+A gauche cliquer sur le menu extensions(4 petits carrés) et télécharger les extensions suivantes :
+
+- **Python**
+- **Pylance**
+- **Jupyter**
+- **Markdown Extended**

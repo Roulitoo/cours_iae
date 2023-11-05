@@ -26,6 +26,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[2.6 Grid search](#26-grid-search)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[2.7 Learning curve](#27-learning-curve)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[2.8 Computational complexity](#28-computational-complexity)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.9 Python environnement virtuel](#29-Python-environnement-virtuel)<br>
 
 
 
@@ -691,3 +692,82 @@ Si on double le nombre de lignes et de colonnes du dataset, on augmente alors de
 En revanche la prédiction ne dépend que du nombre de colonnes $O(n_{features})$
 
 > Tableau comparaison model complexity :https://www.thekerneltrip.com/machine/learning/computational-complexity-learning-algorithms/
+
+
+## 2.9-Python environnement virtuel
+
+Python ne sait pas versionner les packages. Quand vous réaliser un *pip install*, la version que vous téléchargez écrase la précédente.
+
+Cela peut poser de grave problème si vous mettez à jour vos packages, potentiellement vos anciens codes seront en erreur
+car la nouvelle version du package à supprimer une fonction ou l'a tout simplement modifiée...
+
+
+Prenons un exemple, je développe pour le projet ann & svm en python 3.7 et pandas 1.2 la fonction suivante :
+
+```python 
+import pandas as pd
+
+def calcul_moyenne_par_groupe(dataframe, colonne_groupe, colonne_valeur):
+    resultats = dataframe.groupby(colonne_groupe).agg({colonne_valeur: 'mean'}).reset_index()
+    return resultats
+
+```
+
+Maintenant pour un projet spécifique j'ai besoin de pandas 1.0 que je télécharger avec *pip install*.<br>
+Je relance mon code python avec la nouvelle version de pandas et voilà ce que j'obtiens:
+
+```python 
+Cette version de Pandas ne prend pas en charge la méthode 'agg' de cette manière. Mettez à jour vers une version plus récente de Pandas pour utiliser cette fonction.
+
+```
+
+**Heuresement** il existe une solution pour ce prémunir de ce genre de problème.<br>
+Les environnements virtuels!!
+
+![Alt text](image.png)
+
+
+Comment réaliser cette image en code
+
+```shell
+#Comment créer un venv
+
+##Windows powershell
+
+python -m venv mon_env #On peut spécifier la version de python python3.7 -mv venv mon_env
+
+.\mon_env\Scripts\Activate.ps1
+
+#Désactiver 
+deactivate
+
+##Linux
+
+python3 -m venv mon_env
+source mon_env/bin/activate
+
+#Désactiver
+deactivate
+
+```
+
+Vous obtenez un environnement virtuel avec une version de python vide de tout package.
+
+
+### Installation de package avec version spécifique
+
+Nous allons utiliser un fichier texte communement appelé requirements.txt qui contient le nom du package et sa version 
+
+![Alt text](image-1.png)
+
+Après pour installer ces versions il suffit de réaliser la commande suivante :
+
+```shell
+#Il faut avoir activé son environnement virtuel
+
+pip install -r requirements.txt
+
+```
+
+
+> Nous venons d'illuster la célèbre phrase des data scientist. "Je ne comprends pas, ca marche sur mon pc"

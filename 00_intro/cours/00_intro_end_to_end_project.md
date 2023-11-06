@@ -724,7 +724,7 @@ Cette version de Pandas ne prend pas en charge la méthode 'agg' de cette maniè
 **Heuresement** il existe une solution pour ce prémunir de ce genre de problème.<br>
 Les environnements virtuels!!
 
-![Alt text](image.png)
+![Alt text](https://raw.githubusercontent.com/Roulitoo/cours_iae/master/00_intro/img/pyenv.png)
 
 
 Comment réaliser cette image en code
@@ -763,7 +763,7 @@ Vous pouvez suivre le tutoriel [ici](https://docs.anaconda.com/free/navigator/tu
 
 Nous allons utiliser un fichier texte communement appelé requirements.txt qui contient le nom du package et sa version 
 
-![Alt text](image-1.png)
+![Alt text](https://raw.githubusercontent.com/Roulitoo/cours_iae/master/00_intro/img/requirements.png)
 
 Après pour installer ces versions il suffit de réaliser la commande suivante :
 

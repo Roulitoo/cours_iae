@@ -753,6 +753,11 @@ deactivate
 
 Vous obtenez un environnement virtuel avec une version de python vide de tout package.
 
+### Alternative avec Anaconda
+
+Il existe une alternative plus "clique bouton" disponible avec Anaconda.
+Vous pouvez suivre le tutoriel [ici](https://docs.anaconda.com/free/navigator/tutorials/manage-environments/) 
+
 
 ### Installation de package avec version spécifique
 
@@ -776,7 +781,6 @@ pip install -r requirements.txt
 ## 2.10-Vscode 
 
 
-
 Visual Studio Code, souvent abrégé en **VSCode**, est un éditeur de code source gratuit et open-source développé par Microsoft. Il s'agit d'un outil de développement très populaire auprès des programmeurs du monde entier en raison de sa simplicité, de sa flexibilité et de sa variété d'extensions.
 
 Avec VSCode, vous pouvez développer des applications dans divers langages de programmation. Il offre des fonctionnalités essentielles telles que la coloration syntaxique, la complétion automatique, le débogage intégré, la gestion de versions, et bien plus encore.
@@ -794,3 +798,30 @@ A gauche cliquer sur le menu extensions(4 petits carrés) et télécharger les e
 - **Pylance**
 - **Jupyter**
 - **Markdown Extended**
+
+
+## 2.11-Github
+
+GitHub est une plateforme de développement collaboratif qui vous permet de gérer, 
+suivre et partager des projets de programmation, y compris ceux liés à l'économétrie. 
+
+Que vous soyez novice en programmation ou un développeur chevronné, GitHub peut être un outil précieux pour faciliter le travail d'équipe, le suivi des versions et la collaboration sur des projets.
+
+### Qu'est-ce que GitHub ?
+GitHub est un système de contrôle de version (VCS) qui permet de stocker et de suivre l'évolution des fichiers source de vos projets. 
+
+Il vous offre la possibilité de :
+
+- Garder une trace des modifications apportées à vos fichiers au fil du temps.
+- Travailler en collaboration avec d'autres personnes sur des projets.
+- Gérer des branches pour travailler sur différentes fonctionnalités ou correctifs en parallèle.
+- Faciliter la résolution des conflits lors de la fusion de modifications.
+- Faciliter le partage de projets avec le reste du monde.
+
+### Comment commencer avec GitHub ?
+Pour commencer avec GitHub, suivez ces étapes simples :
+
+1. Créez un compte GitHub : Rendez-vous sur GitHub.com et créez un compte gratuit.
+
+2. Installez Git : Git est un logiciel de contrôle de version que vous devrez installer sur votre ordinateur. 
+    Vous pouvez le télécharger à [partir du site officiel de Git](https://git-scm.com/download/win).

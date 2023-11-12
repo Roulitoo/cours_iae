@@ -19,6 +19,7 @@ Chaque repos est structuré de la manière suivante
 ┃  ┃         
 ┃  ┣  📁 td ┣ 🗒️ td.ipynb
 ┃  ┃         ┣ 🗒️td_correction.ipynb
+┃  ┃         ┣ 🗒️requirements.txt
 ┃  ┃
 ┃  ┣  📁cours┣ 🗒️cours.md
 ┃  ┃          ┣ 🗒️cours.pdf

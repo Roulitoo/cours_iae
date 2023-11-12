@@ -12,7 +12,7 @@ git pull
 #Cette commande permet de ramener les changements du repo à distance sur votre machine locale
 ```
 
-
+⚠️ Si vous n'arrivez pas à télécharger en ligne de commande, vous pouvez le faire à la main depuis github⚠️
 
 ## Information cours
 Ce repo contient les cours *SVM et Réseaux de neurones* pour les étudiants du Master 2 ECAP, IAE NANTES.  

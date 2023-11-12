@@ -1,5 +1,17 @@
 # Cours IAE Nantes
 
+Exercice pour le jeudi 16 novembre.
+Vous trouverez le notebook dans 03_train.
+
+Pour mettre à jour votre repo local du github, vous pouvez réaliser la commande suivante:
+
+```shell
+#Attention à bien être dans le répertoire où vous avez téléchargé mon repo github
+git pull
+
+#Cette commande permet de ramener les changements du repo à distance sur votre machine locale
+```
+
 
 
 ## Information cours

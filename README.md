@@ -1,6 +1,6 @@
 # Cours IAE Nantes
 
-Exercice pour le jeudi 16 novembre.
+Exercice pour le jeudi 16 novembre .
 Vous trouverez le notebook dans 03_train.
 
 Pour mettre à jour votre repo local du github, vous pouvez réaliser la commande suivante:

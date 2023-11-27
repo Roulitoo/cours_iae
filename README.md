@@ -1,7 +1,13 @@
 # Cours IAE Nantes
 
-Exercice pour le jeudi 16 novembre  .
-Vous trouverez le notebook dans 03_train.
+## To Do 11 décembre
+
+- Avancer le TD N°2
+- Exercice supplémentaire dispo dans 03_TRAIN
+- M'envoyer un issue avec votre groupe pour l'évaluation (1-2 personnes)
+    Merci de me communiquer le repo github que vous utiliserez
+    Le nom des participants et un dataset
+- M'envoyer un lien avec le notebook de votre collègue qui a présenté la dernière fois
 
 Pour mettre à jour votre repo local du github, vous pouvez réaliser la commande suivante:
 

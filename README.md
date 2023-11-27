@@ -4,8 +4,8 @@
 
 - Avancer le TD N°2
 - Exercice supplémentaire dispo dans 03_TRAIN
-- M'envoyer un issue avec votre groupe pour l'évaluation (1-2 personnes)
-    Merci de me communiquer le repo github que vous utiliserez
+- M'envoyer un issue avec votre groupe pour l'évaluation (1-2 personnes) <br>
+    Merci de me communiquer le repo github que vous utiliserez <br>
     Le nom des participants et un dataset
 - M'envoyer un lien avec le notebook de votre collègue qui a présenté la dernière fois
 

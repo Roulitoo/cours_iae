@@ -1,5 +1,7 @@
 # Mise en production d'un projet de machine learning
 
+Merci de vous appuyer sur le projet de Théo disponible [ici](https://github.com/Bouedo/Reseaux_neurones/blob/master/exo2411.ipynb) 
+
 ## Structure d'un projet python à industrialiser avec repo github
 
 Un projet que vous souhaitez industrialiser peut suivre la structure de ce repo dans 90% des cas.

@@ -7,7 +7,7 @@
 - M'envoyer un issue avec votre groupe pour l'évaluation (1-2 personnes) <br>
     Merci de me communiquer le repo github que vous utiliserez <br>
     Le nom des participants et un dataset
-- M'envoyer un lien avec le notebook de votre collègue qui a présenté la dernière fois
+- M'envoyer un lien avec le notebook de votre collègue (Théo) qui a présenté la dernière fois
 
 Pour mettre à jour votre repo local du github, vous pouvez réaliser la commande suivante:
 

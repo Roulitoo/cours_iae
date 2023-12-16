@@ -113,7 +113,7 @@ professionnelle.
 L'évaluation du cours comportera 2 examens:
 
 - Un projet à réaliser en groupe
-- Un qcm pour évaluer les connaissances du cours
+- Un notebook à critiquer avec des questions
 
 
 ## Projet

@@ -1,5 +1,13 @@
 # Cours IAE Nantes
 
+<div style="background-color: darkred; padding: 10px; border: 1px solid #000000;">
+    Merci de me transmettre votre notebook_eval sur mon mail  <b>roul.benjamin@gmail.com</b>.
+
+    Nom du notebook ==> notebook_eval_NOM_PRENOM.ipynb
+    
+
+</div>
+
 ## To Do 11 décembre
 
 - Avancer le TD N°2

@@ -3,28 +3,29 @@
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/Logo_IAE_horizontal.png" alt="Logo IAE.png" style="width:200px;"/>
 </p>
 
+
 #### Table of Contents
+[1. Mener un projet data](#1-etapes-dun-projet-data)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Bien définir le problème](#11-bien-d%C3%A9finir-le-probl%C3%A8me)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.2 Trouver les données](#12-trouver-les-donn%C3%A9es)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Explorer les données](#13-explorer-les-donn%C3%A9es)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.4 Préparer le dataset](#14-pr%C3%A9parer-le-dataset)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.5 Explorer vos modèles](#15-explorer-des-mod%C3%A8les-et-d%C3%A9terminer-une-short-list)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.6 Tuner les modèles](#16-tuner-les-mod%C3%A8les)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.7 Présenter votre solution](#17-pr%C3%A9senter-votre-solution)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[1.8 Automatiser,monitorer,maintenir](#18-automatiser-votre-mod%C3%A8le-monitorer-votre-mod%C3%A8le-et-le-maintenir)<br>
 
-[1. Mener un projet data](#1-etapes-dun-projet-data) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Bien définir le problème](#11-bien-d%C3%A9finir-le-probl%C3%A8me) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[1.2 Trouver les données](#12-trouver-les-donn%C3%A9es) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Explorer les données](#13-explorer-les-donn%C3%A9es) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[1.4 Préparer le dataset](#14-pr%C3%A9parer-le-dataset) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[1.5 Explorer vos modèles](#15-explorer-des-mod%C3%A8les-et-d%C3%A9terminer-une-short-list) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[1.6 Tuner les modèles](#16-tuner-les-mod%C3%A8les) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[1.7 Présenter votre solution](#17-pr%C3%A9senter-votre-solution) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[1.8 Automatiser,monitorer,maintenir](#18-automatiser-votre-mod%C3%A8le-monitorer-votre-mod%C3%A8le-et-le-maintenir) `<br>`
+[2. Liste de concept utile](#-2-liste-de-concept-utile-)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Imbalanced dataset](#21-imbalanced-dataset)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Feature scaling](#22-features-scaling)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Gradient descent](#23-gradient-descent)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.4 Loss or metric function](#24-loss-function-or-metric-function)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.5 Hyperparamètres](#25-hyperpam%C3%A8tre)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.6 Grid search](#26-grid-search)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.7 Learning curve](#27-learning-curve)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.8 Computational complexity](#28-computational-complexity)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[2.9 Python environnement virtuel](#29-Python-environnement-virtuel)<br>
 
-[2. Liste de concept utile](#-2-liste-de-concept-utile-) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Imbalanced dataset](#21-imbalanced-dataset) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Feature scaling](#22-features-scaling) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Gradient descent](#23-gradient-descent) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[2.4 Loss or metric function](#24-loss-function-or-metric-function) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[2.5 Hyperparamètres](#25-hyperpam%C3%A8tre) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[2.6 Grid search](#26-grid-search) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[2.7 Learning curve](#27-learning-curve) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[2.8 Computational complexity](#28-computational-complexity) `<br>`
-&nbsp;&nbsp;&nbsp;&nbsp;[2.9 Python environnement virtuel](#29-Python-environnement-virtuel) `<br>`
 
 ## 1-Etapes d'un projet Data
 
@@ -65,7 +66,7 @@ A la fin de l'étape de définition du problème vous devriez être capable de :
 - Expliquer votre solution et ses impactes
 - Découper votre solution en plusieurs étapes
 
-`<u>`Synthétiser ces points dans un document et présenter-le `</u>`
+<u>Synthétiser ces points dans un document et présenter-le </u>
 
 ##### Commencez petit
 
@@ -78,13 +79,13 @@ Maintenant que vous avez un 'plan', vous savez comment répondre théoriquement 
 
 Vous allez devoir trouver les données dont vous avez besoin pour répondre à votre problématique:
 
-**1** Lister intuitivement les données dont vous avez besoin `<br>`
-**2** Trouver un interlocuteur ou un document vous expliquant où sont les données/ comment elles sont générées `<br>`
-**3** Créer vous un nouvel espace de travail( **un espace par projet**)`<br>`
-**4** Vérifier les **obligations légales relatives à vos données** (RGDP, Techniques, fuites de données, ...)`<br>`
-**5** Demander des autorisations (si besoin)`<br>`
-**6** Commencer à regarder le type des données dont vous avez besoin (Image, texte, tabulaire, temporelle, géographique,...)`<br>`
-**7** Créer un **code automatisable** pour récupérer vos données `<br>`
+**1** Lister intuitivement les données dont vous avez besoin <br>
+**2** Trouver un interlocuteur ou un document vous expliquant où sont les données/ comment elles sont générées <br>
+**3** Créer vous un nouvel espace de travail( **un espace par projet**)<br>
+**4** Vérifier les **obligations légales relatives à vos données** (RGDP, Techniques, fuites de données, ...)<br>
+**5** Demander des autorisations (si besoin)<br>
+**6** Commencer à regarder le type des données dont vous avez besoin (Image, texte, tabulaire, temporelle, géographique,...)<br>
+**7** Créer un **code automatisable** pour récupérer vos données <br>
 **8** Structurer votre jeu de données pour que ce soit simple par la suite :
 
 - Format des données
@@ -97,18 +98,19 @@ Dans cette partie vous allez essayer de faire ressortir les *insights* de vos do
 💡 **Pensez automatisation, si vous rajoutez des nouvelles données vous ne devez pas recoder l'analyse**
 
 **1** Créer une copie de votre dataset pour travailler dessus (diminuer le taille s'il est trop volumineux)
-`<br>`
-`<br>`
-**2** Pour de l'exploration jupyter notebook est très bien! (on l'oubliera pour le passage en production)`<br>`
+<br>
+<br>
+**2** Pour de l'exploration jupyter notebook est très bien! (on l'oubliera pour le passage en production)<br>
 **3** Analyser vos données de façon descriptive.
 
-> Un conseil, regarder du coté de [html report pandas](https://github.com/ydataai/pandas-profiling)
+> Un conseil, regarder du coté de [html report pandas](https://github.com/ydataai/pandas-profiling) ou [PygWalker](https://docs.kanaries.net/fr/pygwalker/index)
 
-**4** Modifier le type de vos données si nécessaire `<br>`
-**5** Pour une analyse supervisée, identifier la variable cible (target)`<br>`
-**6** Visualiser les données `<br>`
-**7** Etudier les corrélations `<br>`
-**8** Réfléchir à comment résoudre le problème en tant qu'humain sans coder&nbsp;&nbsp;&nbsp;Quelles informations utiliseriez-vous? Comment le feriez-vous?&nbsp;&nbsp;&nbsp;Après l'avoir fait, essayer de transposer votre approche en code**9** Commencer le *feature engineering* pour créer des nouvelles features `<br>`
+**4** Modifier le type de vos données si nécessaire <br>
+**5** Pour une analyse supervisée, identifier la variable cible (target)<br>
+**6** Visualiser les données <br>
+**7** Etudier les corrélations <br>
+**8** Réfléchir à comment résoudre le problème en tant qu'humain sans coder&nbsp;&nbsp;&nbsp;Quelles informations utiliseriez-vous? Comment le feriez-vous?&nbsp;&nbsp;&nbsp;Après l'avoir fait, essayer de transposer votre approche en code  
+**9** Commencer le *feature engineering* pour créer des nouvelles features <br>
 **10** Retourner à l'étape 2 s'il manque des données
 
 > Pensez à Documenter vos trouvailles, documenter, documenter, documenter!
@@ -137,7 +139,7 @@ Dans cette partie vous allez essayer de faire ressortir les *insights* de vos do
 
   - Standardiser ou normaliser vos features
 
-> Ce [bouquin](https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/) est pas mal si ca vous intéresse d'en savoir plus `<br>`
+> Ce [bouquin](https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/) est pas mal si ca vous intéresse d'en savoir plus <br>
 > Un site pour la [Feature selection](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/])
 
 ## 1.5-Explorer des modèles et déterminer une short-list
@@ -183,7 +185,7 @@ Dans cette partie vous allez essayer de faire ressortir les *insights* de vos do
 **3** Expliquer concrètement comment votre projet répond au besoin business (besoin de départ)
 
 **4** Pensez à comment vous allez vendre votre projet!
-&nbsp;&nbsp;&nbsp;*Si vous n'êtes pas dans une entreprise tech, il sera parfois compliqué de prouver que votre modèle est utile.*`<br>`
+&nbsp;&nbsp;&nbsp;*Si vous n'êtes pas dans une entreprise tech, il sera parfois compliqué de prouver que votre modèle est utile.*<br>
 &nbsp;&nbsp;&nbsp;*Faites de la com, soyez imaginatif*
 
 ## 1.8-Automatiser votre modèle, monitorer votre modèle et le maintenir
@@ -265,8 +267,8 @@ from sklearn.preprocessing import StandardScaler
 data = [[4, 8], [-5, 25], [4, 1], [9, 2.5]]
 scaler = StandardScaler()
 print(scaler.fit_transform(data))
-
 ```
+
 
 > Article intéressant : https://towardsdatascience.com/normalization-vs-standardization-quantitative-analysis-a91e8a79cebf
 
@@ -282,14 +284,14 @@ Quand vous calculez les paramètres de votre modèle vous avez 2 possibilités :
 Concrètement vous commencez avec un paramètr $\theta$ donné et vous allez le faire varier itérativement en fonction de la valeur de sa dérivée.
 On peut l'observer graphiquement sur le graphique N°1
 
-`<u>`Graphique N°1 :Descente de gradient `</u>`
+<u>Graphique N°1 :Descente de gradient </u>
 
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_gradient_1.png" alt="fig_1_descente_gradient.png" style="width:600px;"/>
 
 Chaque point rouge représente une itération de descente de gradient et converge vers le minimum global de la fonction de perte.
 Nous obtenons en ce point pour un paramètre $\theta$ dont la valeur minimise notre fonction de perte.
 
-`<u>`Graphique N°2 :Descente de gradient, learning rate trop faible `</u>`
+<u>Graphique N°2 :Descente de gradient, learning rate trop faible </u>
 
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_gradient_2.png" alt="fig_2_descente_gradient.png" style="width:600px;"/>
 
@@ -297,7 +299,7 @@ Il est important que la taille du 'saut' de mise à jour de la valeur de votre p
 On appellera le paramètre qui contrôle le 'saut' **LEARNING RATE**.
 Si celui-ci est trop faible vos 'sauts' seront petits, il faudra beaucoup d'itérations avant de trouver le paramètre optimal.
 
-`<u>`Graphique N°3 :Descente de gradient, learning rate trop haut `</u>`
+<u>Graphique N°3 :Descente de gradient, learning rate trop haut </u>
 
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_gradient_3.png" alt="fig_3_descente_gradient.png" style="width:600px;"/>
 
@@ -348,7 +350,7 @@ Un exemple en dimension 1 pour mieux comprendre 😀
 
 Nous avons une fonction  $f(x) = 3x^2 -2x +5$ et nous souhaitons minimiser cette fonction
 
-`<u>`Graphique N°4 :Exemple descente de gradient `</u>`
+<u>Graphique N°4 :Exemple descente de gradient </u>
 
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/exemple_grad_1D_4.png" alt="fonction_exemple_4.png" style="width:500px;"/>
 
@@ -367,7 +369,7 @@ $x_{n+1} = x_n -\eta*f'(x_n)$
 
 **Etape 3 : Itération sucessive descente de gradient**
 
-`<u>`Graphique N°5 :Exemple descente de gradient `</u>`
+<u>Graphique N°5 :Exemple descente de gradient </u>
 
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/descente_grad_exemple_5.png" alt="fonction_exemple_descente_grad_5.png" style="width:500px;"/>
 
@@ -443,7 +445,7 @@ Il existe 3 types de grid search :
 
 On peut voir graphiquement le résultat des 2 approches.
 
-`<u>`Graphique N°6 :Visualisation grid search avec 2 hyperparamètres `</u>`
+<u>Graphique N°6 :Visualisation grid search avec 2 hyperparamètres </u>
 
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/grid_search_6.png" alt="gris_search_6.png" style="width:1000px;"/>
 
@@ -454,6 +456,7 @@ Le random search donne généralement de meilleure performance mais il est aussi
 Pour implémenter ces méthodes en python, vous pouvez utiliser les codes suivants :
 
 ```python
+
 #Import function
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
@@ -479,7 +482,9 @@ model_grid.best_estimator_
 
 ```
 
+
 #### Random search
+
 
 ```python
 #Import function
@@ -509,6 +514,7 @@ print(model_rand.best_estimator_)
 
 ```
 
+
 #### Bayesian search
 
 ```python
@@ -537,8 +543,8 @@ reg_bay = BayesSearchCV(estimator=RandomForestClassifier(),
 model_bay = reg_bay.fit(X, y)
 #Meilleur estimateur
 print(model_bay.best_estimator_)
-
 ```
+
 
 > Article intéressant sur le grid search et random search
 > https://machinelearningmastery.com/hyperparameter-optimization-with-random-search-and-grid-search/
@@ -549,8 +555,8 @@ print(model_bay.best_estimator_)
 
 ## 2.7-Learning curve
 
-En modélisation on dit souvent que "plus on a de data plus le modèle sera précis". Cette affirmation est vraie, augmenter le nombre de data améliore généralement les performance des modèles.`<br>`
-`<br>`
+En modélisation on dit souvent que "plus on a de data plus le modèle sera précis". Cette affirmation est vraie, augmenter le nombre de data améliore généralement les performance des modèles.<br>
+<br>
 Cependant, il existe une quantité de data à partir duquel le modèle arrête d'apprendre. Autrement dit rajouter des données ne sert à rien à part augmenter le temps de calcul!
 Cela peut venir du fait qu'il existe un parttern simple dans vos données et le modèle apprend très vite ou malheuresement que vos données ne permettent de pas d'expliquer le phénomène étudié.
 
@@ -560,7 +566,7 @@ On itère plusieurs modélisations du même modèle sans faire varier les hyperp
 
 Généralement on représente cette technique avec un graphique qui ressemble à celui ci-dessous :
 
-`<u>`Graphique N°7 :Visualisation learning curve `</u>`
+<u>Graphique N°7 :Visualisation learning curve </u>
 
 <img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/learning_curve_7.png" alt="learning_curve_7.png" style="width:600px;"/>
 
@@ -649,11 +655,11 @@ Ces étapes individuelles jouent un rôle essentiel dans la mise en production i
 
 Ces pourquoi les Data Scientist ont décidé d'appliquer les meilleures pratiques des Data Pipelines à nos problématiques de création de modèles.
 
-![chaine ml](cours_iae\00_intro\img\machine_learning_pipeline.png)
+<img src="(https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/machine_learning_pipeline.png" alt="ml_ops" style="width:600px;"/>
 
 Cette chaine de traitement s'associe à de bonne pratique :
 
-![mlops_chaine](cours_iae\00_intro\img\mlops.png)
+<img src="(https://github.com/Roulitoo/cours_iae/blob/87ed17bff302883964218ce04959dafd76301e54/00_intro/img/mlops.png" alt="ml_ops" style="width:600px;"/>
 
 ## 2.9-Python environnement virtuel
 
@@ -664,24 +670,24 @@ car la nouvelle version du package à supprimer une fonction ou l'a tout simplem
 
 Prenons un exemple, je développe pour le projet ann & svm en python 3.7 et pandas 1.2 la fonction suivante :
 
-```python
+python
 import pandas as pd
 
 def calcul_moyenne_par_groupe(dataframe, colonne_groupe, colonne_valeur):
     resultats = dataframe.groupby(colonne_groupe).agg({colonne_valeur: 'mean'}).reset_index()
     return resultats
 
-```
 
-Maintenant pour un projet spécifique j'ai besoin de pandas 1.0 que je télécharger avec *pip install*.`<br>`
+
+Maintenant pour un projet spécifique j'ai besoin de pandas 1.0 que je télécharger avec *pip install*.<br>
 Je relance mon code python avec la nouvelle version de pandas et voilà ce que j'obtiens:
 
-```python
+python
 Cette version de Pandas ne prend pas en charge la méthode 'agg' de cette manière. Mettez à jour vers une version plus récente de Pandas pour utiliser cette fonction.
 
-```
 
-**Heuresement** il existe une solution pour ce prémunir de ce genre de problème.`<br>`
+
+**Heuresement** il existe une solution pour ce prémunir de ce genre de problème.<br>
 Les environnements virtuels!!
 
 ![Alt text](https://raw.githubusercontent.com/Roulitoo/cours_iae/master/00_intro/img/pyenv.png)
@@ -707,8 +713,9 @@ source mon_env/bin/activate
 
 #Désactiver
 deactivate
-
 ```
+
+
 
 Vous obtenez un environnement virtuel avec une version de python vide de tout package.
 

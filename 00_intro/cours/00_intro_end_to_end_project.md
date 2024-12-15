@@ -655,11 +655,11 @@ Ces étapes individuelles jouent un rôle essentiel dans la mise en production i
 
 Ces pourquoi les Data Scientist ont décidé d'appliquer les meilleures pratiques des Data Pipelines à nos problématiques de création de modèles.
 
-<img src="(https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/machine_learning_pipeline.png" alt="ml_ops" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/machine_learning_pipeline.png" alt="ml pipeline" style="width:800px;"/>
 
 Cette chaine de traitement s'associe à de bonne pratique :
 
-<img src="(https://github.com/Roulitoo/cours_iae/blob/87ed17bff302883964218ce04959dafd76301e54/00_intro/img/mlops.png" alt="ml_ops" style="width:600px;"/>
+<img src="https://github.com/Roulitoo/cours_iae/blob/master/00_intro/img/mlops.png" alt="ml pipeline" style="width:800px;"/>
 
 ## 2.9-Python environnement virtuel
 

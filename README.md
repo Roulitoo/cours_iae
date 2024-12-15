@@ -1,48 +1,25 @@
 # Cours IAE Nantes
 
-<div style="background-color: darkred; padding: 10px; border: 1px solid #000000;">
-    Merci de me transmettre votre notebook_eval sur mon mail  <b>roul.benjamin@gmail.com</b>.
+💥 Pour l'année scolaire 2024/2025 la partie réseaux de neurones sera remplacées par l'interprétabilité des modèles ML💥
 
-    Nom du notebook ==> notebook_eval_NOM_PRENOM.ipynb
-    
 
-</div>
 
-## To Do 11 décembre
+Information cours
 
-- Avancer le TD N°2
-- Exercice supplémentaire dispo dans 03_TRAIN
-- M'envoyer un issue avec votre groupe pour l'évaluation (1-2 personnes) <br>
-    Merci de me communiquer le repo github que vous utiliserez <br>
-    Le nom des participants et un dataset
-- M'envoyer un lien avec le notebook de votre collègue (Théo) qui a présenté la dernière fois
+Ce repo contient les cours *SVM et Réseaux de neurones* pour les étudiants du Master 2 ECAP, IAE NANTES.
+Le volume horaire de ce cours est de 25h et sera réparti en 8 séances de CM/TP.
 
-Pour mettre à jour votre repo local du github, vous pouvez réaliser la commande suivante:
+Je vous invite à ramener votre ordinateur personnel si vous en avez un. Que ce soit pour les CM/TP vous en aurez besoin.
 
-```shell
-#Attention à bien être dans le répertoire où vous avez téléchargé mon repo github
-git pull
-
-#Cette commande permet de ramener les changements du repo à distance sur votre machine locale
-```
-
-⚠️ Si vous n'arrivez pas à télécharger en ligne de commande, vous pouvez le faire à la main depuis github⚠️
-
-## Information cours
-Ce repo contient les cours *SVM et Réseaux de neurones* pour les étudiants du Master 2 ECAP, IAE NANTES.  
-Le volume horaire de ce cours est de 18h et sera réparti en 7 séances de CM/TP.
-
-Je vous invite à ramener votre ordinateur perso si vous en avez un. Que ce soit pour les CM/TP vous en aurez besoin.
-
-Chaque repos est structuré de la manière suivante 
+Chaque repos est structuré de la manière suivante
 
 ```
 📦cours_iae
-┣ 🗒️README.md       
+┣ 🗒️README.md     
 ┃
 ┣ 📁 chapitre_cours
 ┃  ┣  📁code┣ 🗒️code_cours
-┃  ┃         
+┃  ┃       
 ┃  ┣  📁 td ┣ 🗒️ td.ipynb
 ┃  ┃         ┣ 🗒️td_correction.ipynb
 ┃  ┃         ┣ 🗒️requirements.txt
@@ -53,34 +30,31 @@ Chaque repos est structuré de la manière suivante
 
 ```
 
-
 L'objectif du cours est de vous fournir une compréhension théorique et pratique des SVM et Réseaux de Neurones (ANN).
 Chaque modèle sera présenté en cours avant de passer à la partie pratique en python.
 Vous aurez également des travaux à faire à la maison pour poursuivre votre apprentissage.
-
 
 ## Comment échanger avec moi
 
 Vous avez 2 possibilités pour échanger avec moi, les *issues* de github et le mail.
 
-### Github issues 
+### Github issues
 
 C'est un espace associé au repo qui vous permet de me laisser un message visible par tout le monde.
 Vos problèmes sont généralement les mêmes que ceux de vos collègues, autant mutualiser tout au même endroit.
 
->Si vous avez une remarque ou question, n'hésitez pas à me taguer directement avec un [issues](https://docs.github.com/fr/issues/tracking-your-work-with-issues/creating-an-issue). Vous pourrez voir les questions des autres et ma réponse.
+> Si vous avez une remarque ou question, n'hésitez pas à me taguer directement avec un [issues](https://docs.github.com/fr/issues/tracking-your-work-with-issues/creating-an-issue). Vous pourrez voir les questions des autres et ma réponse.
 
 ### Mail
 
 Vous pouvez me contacter avec mon mail perso 📧 roul.benjamin@gmail.com 📧.
-Merci de l'utiliser **uniquement** pour des questions/remarques que vous ne souhaitez rendre accesssible à tout le monde. 
-
+Merci de l'utiliser **uniquement** pour des questions/remarques que vous ne souhaitez rendre accesssible à tout le monde.
 
 # Prérequis
 
 ## Python
 
-Vous devez déja avoir une première expérience en programmation avec Python. 
+Vous devez déja avoir une première expérience en programmation avec Python.
 Gérer des données avec python avec les packages usuels pour la data science doit être facile.
 
 ⚠️ Si vous ramenez votre ordinateur perso vous devez installer Python avant notre premier cours.
@@ -92,7 +66,6 @@ $ sudo apt-get update
 $ sudo apt-get install python3-virtualenv python3
 $ sudo apt-get install gcc g++ python3-dev
 ```
-
 
 ### Windows, MacOS
 
@@ -112,9 +85,8 @@ Un tuto pour utiliser [Google Colab](https://machinelearningmastery.com/google-c
 Chaque étudiant devra créer un compte github qui lui permettra de récupérer les cours et td sur mon repository.
 Ce sera également l'endroit où vous déposerez votre projet qui sera évalué à la fin du module.
 
-Aucune formation ne sera faite pour github. Votre devrez être en mesure de vous former de votre coté à ce logiciel très utile pour votre vie 
+Aucune formation ne sera faite pour github. Votre devrez être en mesure de vous former de votre coté à ce logiciel très utile pour votre vie
 professionnelle.
-
 
 # Evaluation du cours
 
@@ -123,9 +95,9 @@ L'évaluation du cours comportera 2 examens:
 - Un projet à réaliser en groupe
 - Un notebook à critiquer avec des questions
 
+Ainsi qu'une évaluation sur **5 points** de votre repo Github contenant l'ensemble des exercices que nous aurons réalisés plus votre projet final.
 
 ## Projet
-
 
 **Objectif :**
 Réaliser un projet de machine learning sur un dataset de 5000 observations minimuns.

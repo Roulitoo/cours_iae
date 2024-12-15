@@ -670,13 +670,13 @@ car la nouvelle version du package à supprimer une fonction ou l'a tout simplem
 
 Prenons un exemple, je développe pour le projet ann & svm en python 3.7 et pandas 1.2 la fonction suivante :
 
-python
+```python
 import pandas as pd
 
 def calcul_moyenne_par_groupe(dataframe, colonne_groupe, colonne_valeur):
     resultats = dataframe.groupby(colonne_groupe).agg({colonne_valeur: 'mean'}).reset_index()
     return resultats
-
+```
 
 
 Maintenant pour un projet spécifique j'ai besoin de pandas 1.0 que je télécharger avec *pip install*.<br>

@@ -12,7 +12,7 @@ De plus nous concluerons systématiquement par les avantages et inconvénient de
 
 Le cours est aujourd'hui traiter pour interpréter des données tabulaires ce qui correspond aux données que vous traitez majoritarement dans le cadre de votre formation mais il existe également des méthodes d'interpétation pour **des données non tabulaire!**
 
-## Qu'est ce que le machine learning
+### Qu'est ce que le machine learning
 
 Avant d'entammer une définition précise de l'interprétabilité et explicabilité des modèles d'apprentissage automatique. il convient de bien définir l'apprentissage automatique ou Machine Learning.
 
@@ -46,7 +46,7 @@ print(celsius_to_fahrenheit(25))  # Output : 77.0
 
 ```
 
-L'utilisation d'un algorithme ici est idione. On connaitre les instructions qu'on souhaite réaliser et comment transformer nos intput pour obtenir l'output désiré.
+L'utilisation d'un algorithme ici est idoine. On connait les instructions qu'on souhaite réaliser et comment transformer nos intput pour obtenir l'output désiré.
 
 **Machine Learning :** C'est une méthode qui permet à un programme d'apprendre à partir de données afin de réaliser et optimiser une prédiction. C'est un changement de paradigm de la *programmation normale* où on définit explicitement nos étapes et nos règles à une *programmation indirecte* où les règles elles-mêmes émanement de la Data.
 
@@ -90,17 +90,19 @@ Plus un interprétabilité du modèle sera forte plus un humain sera en mesure d
 
 Dans ce cours nous distinguerons également une nuance entre Interpretabilité d'un modèle et Explicabilité.
 
-**Explicabilité** : Explication de prédiction individuelle
+**💡Explicabilité** : Explication de prédiction individuelle
 
-**Interprétabilité** : Compréhension générale du modèle et comment sont réalisées les prédictions
+**📖 Interprétabilité** : Compréhension générale du modèle et comment sont réalisées les prédictions
 
 #### Compromis entre interprétabilité et pouvoir prédictif
 
-Vous vous entrainerez des modèles d'apprentissage automatique vous aurez systématiquement à choisir entre le "**Pourquoi" et le "Quoi".**
+Lors de l'entrainement  d'un modèle d'apprentissage automatique vous aurez systématiquement à choisir entre le "**Pourquoi" et le "Quoi".**
 
-Un modèle permettant de comprendre facilement Pourquoi je réalise tel ou tel prédiction offre généralement de performance moins bonne, de fait un **"quoi"** plus faible.
+Un modèle permettant de comprendre facilement **"Pourquoi"** je réalise tel ou tel prédiction offre généralement de performance moins bonne, de fait un **"quoi"** plus faible.
 
-Exemple du Customer Churn :
+---
+
+**Exemple du Customer Churn :**
 
 Un client souhaite partir de votre enseigne et votre modèle de ML détecte avec une probabilité de 98% qu'il va quitter votre enseigne. Cette information est importante car elle priorise de client pour agir tout de suite afin de le retenir.
 
@@ -108,9 +110,10 @@ En revanche, cela ne vous aucune information de comment le retenir
 
 Qu'est ce qui pousse mon client à partir? Cette question n'est pas répondue.
 
-Le positionnement de mon prix? Une insatifaction ?
+- Le positionnement de mon prix?
+- Une insatifaction ?
 
-Ce compromis doit être guidé par l'objectif que vous recherchez. Généralement le Pourquoi l'importe dans les cas suivants :
+Ce compromis doit être guidé par l'objectif que vous recherchez.                                                                                                             Généralement le Pourquoi l'importe dans les cas suivants :
 
 - Recherche scientifique afin de comprendre un phénomène ==> Pourquoi
 - Quand le problème est déja très bien cadré et déja résolu ==> What Optical charactère recognition
@@ -125,17 +128,19 @@ D'où l'importance de cadrer précisement le problème que vous souhaitez adress
 
 #### Taxonomie des interprétations de modèles
 
-Chaque méthode d'interprétabilité peut être classifiée dans différentes familles avec des critères précis. Etudions les
+Le premier niveau d'interprétabilité porte sur la **capacité intrinsèque** d'un modèle à être interprétable ou alors être **interprétable post hoc.**
 
-Le premier niveau d'interprétabilité porte sur la **capacité intrinsèque** d'un modèle à être interprétable ou alors être interprétable post hoc.
+**Capacité intrinsèque :**
 
-Le premier se fait en contraignant le modèle en restreignant sa compléxité (nombre de features) afin de le comprendre aisément contre  des méthodes utilisées pour interpréter le modèle post entrainement.
+On l'obtient en contraignant le modèle en restreignant sa compléxité (nombre de features) afin de le comprendre aisément contre  des méthodes utilisées pour interpréter le modèle post entrainement.
 
 L'interprétabilité intrinsèque se refere à des modèles simle comme (Régression linéaire, Logistique,  Arbre de regression/classification simple, SVM)
 
-Post Hoc interpretabilité se refère à des modèles plus complexes qui sont interprétables post-entrainement grace à des méthodes extérieurs aux modèles (Feature importance)
+**Post hoc:**
 
-> Le post Hoc interpretabilité peut aussi s'utiliser sur des modèles interpretable intrinsèque
+L'interpretabilité se refère à des modèles plus complexes qui sont interprétables post-entrainement grace à des méthodes extérieurs aux modèles (Feature importance)
+
+> 💡Le post Hoc interpretabilité peut aussi s'utiliser sur des modèles interpretable intrinsèque
 
 Globalement, il existe 5 méthodes d'interprétation qu'on peut diviser de la façon suivante :
 
@@ -145,11 +150,11 @@ Globalement, il existe 5 méthodes d'interprétation qu'on peut diviser de la fa
 - **Data point** : L'interpréation par individu spécifique du jeu de données, on se concentre sur un invidividu spécifique afin d'expliquer sa prédiction (Counter factual prédiction)
 - Intrinsically interpretable model : Approximer un modèle Black Box par un modèle interprétable localement ou Globalement (ref model internal)
 
-> On parle de modèle spécifique quand l'interprétation est propre à un type de modèle et de modèle agnostic quand la méthode s'applique à tout type de modèle.
+> 💡On parle de modèle spécifique quand l'interprétation est propre à un type de modèle et de modèle agnostic quand la méthode s'applique à tout type de modèle.
 
-#### Les différents niveaux d'interprétabilités
+### Les différents niveaux d'interprétabilités
 
-##### L'interprétabilité Global ou Hoslitique
+#### L'interprétabilité Global ou Hoslitique
 
 Un modèle est globalement interprétable si l'on peut comprendre **l'ensemble de son fonctionnement** d'un seul coup d'œil ou avec une vue d'ensemble complète. Il faut être capable de :
 
@@ -160,7 +165,7 @@ Un modèle est globalement interprétable si l'on peut comprendre **l'ensemble d
 
 Il est très rare de pouvoir atteindre ce niveau de connaissance d'un modèle quand on dépasse 3 Features. Dès lors qu'on dépasse des représentations à 3 dimensions, il est impossible pour un humain de se représenter les intéractions.
 
-##### L'interprétabilité Global à un niveau modulaire
+#### L'interprétabilité Global à un niveau modulaire
 
 Comprendre un modèle entier, comme un Naive Bayes avec des centaines de variables, est pratiquement impossible. Cela nécessiterait de mémoriser tous les poids et d’évaluer la distribution conjointe des variables, une tâche irréaliste.
 
@@ -170,7 +175,7 @@ Pour les modèles linéaires on peut interpréter ses poids toutes choses étant
 
 Dans les faits, il est rare qu'une variable varie alors que les autres sont constantes.
 
-##### **Interprétabilité locale pour une prédiction unique**
+#### **Interprétabilité locale pour une prédiction unique**
 
 Comprendre pourquoi un modèle a fait une prédiction particulière pour une instance donnée.
 
@@ -186,7 +191,7 @@ On peut tester cela en simulant des modifications de la taille (+ ou - 10 m²) e
 
 **Conclusion** : Approfondir une instance spécifique permet de mieux comprendre les décisions du modèle, même lorsqu’il est complexe au niveau global.
 
-##### Interprétabilité locale pour un groupe de prédictions
+#### Interprétabilité locale pour un groupe de prédictions
 
 Comprendre pourquoi le modèle a fait des prédictions spécifiques pour un groupe d’instances.
 
@@ -195,7 +200,7 @@ Comprendre pourquoi le modèle a fait des prédictions spécifiques pour un grou
 1. **Approches globales** : Appliquer des méthodes d'interprétation globale, mais en considérant le groupe comme s'il s'agissait de l'ensemble complet des données.
 2. **Approches locales** : Utiliser des explications locales pour chaque instance individuelle, puis les combiner ou les agréger pour le groupe.
 
-#### Qu'est ce qu'une explication humainement compréhensible
+### Qu'est ce qu'une explication humainement compréhensible
 
 Une explication est une réponse à une question formulée avec un "Pourquoi" (Miller 2017)
 
@@ -240,11 +245,11 @@ graph TD
   
 ```
 
-#### Modèle Linéaire et interprétation
+### Modèle Linéaire et interprétation
 
 Réaliser un exemple avec une régression liénaire sur la vente de vélo
 
-#### Global Model Agnostic
+### Global Model Agnostic
 
 Les méthodes globales décrivent le comportement **moyen** de votre modèle de Machine Learning. Elles sont particulièrement utiles lorsuq'il s'agit de comprendre les mécanismes généraux de votre modèle et ainsi le validé ou l'invalidé.
 
@@ -255,7 +260,9 @@ Dans ce cours nous étudierons les méthodes suivantes :
 - Feature Interaction (H-statistic) : Quantifie les effets joints des variables
 - Feature Importance : Mesure l'effet d'une feature sur la fonction de perte
 
-##### Partial Depence plot
+#### Partial Depence plot
+
+##### Théorie
 
 Le partial depence plot ou (PDP) nous montre l'effet marginal d'une ou 2 variables sur la target que nous chercons à prédire. PDP peut donc nous montrer la nature de la relation existante entre une variable du modèle et la target que celle ci soit liénaire ou non linéaire, monotone ou même plus complexe.
 
@@ -286,13 +293,102 @@ c. Visualiser les résultats du partial depence plot.
 
 ---
 
-###### Exemple
+##### Exemple et implémentation:
 
-> introduire un exemple et comment interpréter les résultatss
+```python
+ from sklearn.inspection import partial_dependence, PartialDependenceDisplay,
+
+# Définir nos variables d'intérêts dans une liste
+features = ["temp","hum","windspeed"]  # Index des caractéristiques
+_, ax1 = plt.subplots(figsize = (12,6))
+PartialDependenceDisplay.from_estimator(rf, # votre modèle
+                                         X_train, # Jeu d'entrainement
+                                         features, # features
+                                         kind="average", # Pour obtenir une PDP
+                                         grid_resolution=50, Nombre de points estimés pour le tracer de la courbe
+                                         ax = ax1 # Paramètre de matplotlib
+   
+                                         )
+plt.suptitle("Partial Dependence Plots - random- forest")
+plt.tight_layout()
+plt.show()
+
+```
+
+Cela à pour effet de tracer les courbes de dépendences partielles suivantes :
+
+![1736197591464](image/cours/1736197591464.png)
+
+> Note :  Les données ont été normalisées avec un min_max_scaler
+
+Température :
+
+Plus la température augmente plus la vente de vélos semble importantes avec un palier.
+
+Humité :
+
+Plus l'humidité augmente plus la vente de vélo va diminuer
+
+Vitesse du vent:
+
+Jusqu'à 35km/h la vente de vélo ne change pas énormement
+
+Cas avec des variables catégorielles :
+
+```python
+#On passe nos variables OHE
+features = ["weathersit_1","weathersit_2","weathersit_3"]  # Index des caractéristiques
+_, ax1 = plt.subplots(figsize = (12,6))
+PartialDependenceDisplay.from_estimator(rf, 
+                                         X_train, 
+                                         features,
+                                         categorical_features=["weathersit_1","weathersit_2","weathersit_3"], # On spécifie ici les variables catégorielles
+                                         kind="average",
+                                         grid_resolution=50,
+                                         ax = ax1,
+                                         n_cols=4
+   
+                                         )
+plt.suptitle("Partial Dependence Plots - random- forest")
+plt.tight_layout()
+plt.show()
+
+```
+
+Résulats :
+
+![1736198927081](image/cours/1736198927081.png)
+
+Pour la variable weathersit_2 on peut remarquer une différence importante entre la modalité 1 et 0.
+
+Il semble qu'un temps avec peu de nuage semble bien plus intéressant qu'un temps sans nuage.
+
+Dernier cas, on souhaite maintenant comparer des paires de features.
+
+```python
+# PDP pour tracer des features par paires. 
+# Attention fonctionne unqiuement par paire de même type quali/quali ou quanti/quanti
+features = ["temp","hum",("temp","hum"),("season_1","season_2"),'hr']  # Index des caractéristiques
+_, ax1 = plt.subplots(figsize = (12,6))
+PartialDependenceDisplay.from_estimator(rf, 
+                                         X_train, 
+                                         features,
+                                         categorical_features=["season_1","season_2","hr"],
+                                         kind="average",
+                                         grid_resolution=50,
+                                         ax = ax1
+                                         )
+plt.suptitle("Partial Dependence Plots - random- forest")
+plt.tight_layout()
+plt.show()
+
+```
+
+![1736199337344](image/cours/1736199337344.png)
 
 ---
 
-###### Avatanges :
+##### Avatanges :
 
 Les PDP sont simlle à comprendre et permettent d'interpréter des relations linéaire ou non liénaires simplement.
 
@@ -302,7 +398,7 @@ Si votre Feature n'est pas corréelées avec les autres prédicteurs marginalis�
 
 ---
 
-###### Désanvatages:
+##### Désanvatages:
 
 Le **nombre de features maximun** pouvant être interprétés à la fois est de 2. Cela ne signifie pas que les PDP ne peuvent pas en utiliser plus mais il devient humainement impossible d'interpréter des relations en Dimension 3 ou plus.
 
@@ -313,7 +409,9 @@ Les graphiques de dépendance partielle (PDP) supposent que les variables étudi
 **Exemple :**
 Pour analyser l'effet de la taille et du poids sur la vitesse de marche, un PDP pourrait inclure des combinaisons improbables comme une taille de 2 mètres avec un poids inférieur à 50 kg. Cela crée des points dans des zones où la probabilité réelle est très faible, rendant les résultats moins fiables.
 
-##### Accumulated Loccal Effect
+#### Accumulated Loccal Effect
+
+##### Théorie
 
 Lorsque les variables sont corrélées entre elle une alternative existe. Elle permet également d'éxaminer l'influence d'une feature sur votre target tout en étant non biaisé et moins couteuse en temps de calcul (pas de calcul sur l'ensemble des données).
 
@@ -405,9 +503,39 @@ Pour chaque intervalle $I_k$ :
 
 ---
 
-###### Exemple :
+##### Exemple et implémentation:
 
-###### Avantages :
+Pour implémenter les ALE en python vous pouvez utiliser le package `ALIBI` celui-ci est nettement évolué que son équivalent en dans le langage R [ALEPlot R](https://cran.r-project.org/web/packages/ALEPlot/index.html) ou [iml](https://cran.r-project.org/web/packages/iml/index.html) .
+
+```python
+from alibi.explainers import ALE, plot_ale
+
+rf_ale = ALE(rf.predict, #Methode predict de votre modèle
+             feature_names=features_names, # Liste des features où il faut calculer l'ALE
+             target_names=["bike sell"] # Nom de la target
+) 
+#Calcul des ALE, attention il faut un format numpy arrray
+rf_exp = rf_ale.explain(X_train.to_numpy()) 
+
+#Plot pour l'interprétation
+
+_, ax1 = plt.subplots(figsize = (10,8))
+plot_ale(rf_exp, #Résultats des ALE
+	 features=["temp","hum","windspeed"], # Feature à représenter
+	 ax= ax1, 
+	 targets=[0] # Si classification mutliple, passer le nom de toutes les modalités à prédire
+)
+```
+
+![1736285515642](image/cours/1736285515642.png)
+
+Ici l'interprétation est essentiellement qualitative. On cherche à éxaminer l'intéraction entre notre Feature et la target.
+
+Pour rappel, la valeur de l'ALE en un point se lit de la façon suivante :
+
+Une hausse de l'humidité sur l'interval [0.45,0.55] diminue la location de vélo de 5 unités en en tenant compte de l'influence des autres variables. Cet effet n'est valable que pour l'interval 0.45,0.55
+
+##### Avantages:
 
 Les **ALE sont non biaisés** en présence de features corréelées a la différence des PDP car marginaliseront des combinaisons improbables de données.
 
@@ -415,7 +543,7 @@ Les **ALE sont non biaisés** en présence de features corréelées a la différ
 
 **Les ALE plot** **sont centrées** en 0 ce qui facilite leur intrépétation. La lecture se fait comprativement à la moyenne des prédiction
 
-###### Désavantages :
+##### Désavantages :
 
 Fixer son interval peut être relativement compliqué et peut parfois produire des ALE plot très compliqué à lire. Dans ce cas diminuer le nombre d'intervalles.
 
@@ -425,9 +553,9 @@ L'implémentation et la compréhension est moins intuitive que les PDP
 
 Même si les tracés ALE ne sont pas biaisés en cas de caractéristiques corrélées, l’interprétation reste difficile lorsque les caractéristiques sont fortement corrélées. Lors d'une très forte corrélation, il est logique d’analyser l’effet de la modification des deux caractéristiques ensemble et non isolément. Cet inconvénient n’est pas spécifique aux tracés ALE, mais constitue un problème général de caractéristiques fortement corrélées.
 
-Utiliser le package Alibi
+#### Feature interaction
 
-##### Feature interaction
+##### Théorie
 
 Quand nos features intéragissent entre elles dans un modèle notre prédiction ne peut être exprimée comme une somme indépendante de nos features. Car la valeur d'une feature dépendant directement de la valeur d'une autre.
 
@@ -481,7 +609,7 @@ Cette méthode s'appelle le **Friedman's H-statistic**
 
 ---
 
-###### 2. Définition de base des interactions
+##### 2. Définition de base des interactions
 
 - **Absence d'interaction entre deux features :**
   $PD_{jk}(x_j, x_k) = PD_j(x_j) + PD_k(x_k)$
@@ -531,10 +659,11 @@ $H_j^2 = \frac{\sum_{i=1}^n \big[ \hat{f}(x^{(i)}) - PD_j(x_j^{(i)}) - PD_{-j}(x
 
 ---
 
-###### 6. En pratique
+##### Exemple et implémentation:
 
 - Utilisez la **H-statistic** pour détecter et quantifier les interactions importantes.
 - Si des interactions fortes sont détectées :
+
   - Adaptez le modèle (e.g., modèles non linéaires, termes d'interaction explicites).
   - Réalisez une analyse approfondie des interactions pour guider l'amélioration ou l'interprétation du modèle.
 
@@ -591,9 +720,9 @@ h_stat.fit(model, X_exp)
 h_stat.plot(vis_type="bar_chart_ova")
 ```
 
-![1736008460638](image/cours/1736008460638.png)
-
 > Ce graphique montre la pusisance d'intéraction (H-statistic) pour chaque feature avec les autres . Ici les effets d'intéractions en entre les features son vraiment faibles (mois de 10% de la variance expliquée par feature).
+
+![1736288841144](image/cours/1736288841144.png)
 
 Les effets d'intéractions :
 
@@ -602,19 +731,29 @@ Les effets d'intéractions :
 h_stat.plot(vis_type="bar_chart", ,top_k=5 )
 ```
 
-![1736020919960](image/cours/1736020919960.png)
+> On peut également observer les effets d'intéraction par paire de variables.
 
-> On peut également observer les effets d'intéraction par paire de variablre.
+![1736288893942](image/cours/1736288893942.png)
 
-###### Avantages :
+##### Avantages :
 
-###### Désavantages
+- L'interprétation se fait facilement, on représente la part de variance expliquée par l'intéraction de la feature et non pas son effet individuel.
+- On peut comparer cette statistique d'un modèle à l'autre
+- Elle détecte toute forme d'intéraction
 
-##### Permutation Feature importance
+##### Désavantages
+
+- La statistique est très très couteuse en compute et nous force à travailler sur des échantillons
+- Pas de tests statistiques fournies pour emettre une hypothèse d'intéraction ou non
+- Pas de threshold pour définir une intéraction par exemple intéraction >0.3
+
+#### Permutation Feature importance
+
+##### Théorie
 
 ⚠️ Connaitre la notion de feature importance est un pré-requis.
 
-Le concept est très simple : nous mesurons l’importance d’un feature en calculant l’augmentation de l’erreur de prédiction du modèle après permutation des caractèristiques du feature.
+Le concept est très simple : nous mesurons l’importance d’une feature en calculant l’augmentation de l’erreur de prédiction du modèle après permutation des caractèristiques du feature.
 
 Une caractéristique est **« importante »** si le mélange de ses valeurs augmente l'erreur du modèle, car dans ce cas, le modèle s'est appuyé sur la caractéristique pour la prédiction.
 
@@ -635,7 +774,7 @@ Input: Un modèle entrainé $\hat{f}$, une matrice de vos features $X$, un vecte
 
 ---
 
-Exemple et implémentation :
+##### Exemple et implémentation :
 
 ```python
 from sklearn.inspection import permutation_importance
@@ -648,10 +787,13 @@ random_permutation = permutation_importance(model, X, y,
 
 > Permuter la variable season conduit à une augmentation du MSE de 0.13
 
-###### Avantages :
+##### Avantages :
 
 - Facilter à interpréter : Le feature importance montre de combien on augmente l'erreur du modèle quand l'information est détruite
 - La permutation ne nécessite pas de réentrainer le modèle !!
 - La permutation supprime l'effet univariée de notre variable sur la target mais également les effets joints avec la distribution des autres variables. Cela à tendance à surestimer l'effet de la variable car elle porte l'effet individuel et l'effet collectif
 
-###### Désavantages:
+##### Désavantages:
+
+- Comme on permute la valeur des features de façon aléatoire cela introduit un biais. Si on relance une seconde fois la permutation peut être différent et donner des résultats totalement différent. Pour diminuer cette effet il est conseiller de réaliser plusieurs fois cette permutation.
+- Comme pour les PDP, si les features sont coréllées ont peut biaiser les résulats avec des valeurs n'existant pas

@@ -378,7 +378,7 @@ Pour chaque intervalle $I_k$ :
 
 ##### Exemple et implémentation:
 
-Pour implémenter les ALE en python vous pouvez utiliser le package `ALIBI` celui-ci est nettement évolué que son équivalent en dans le langage R [ALEPlot R](https://cran.r-project.org/web/packages/ALEPlot/index.html) ou [iml](https://cran.r-project.org/web/packages/iml/index.html) .
+Pour implémenter les ALE en python vous pouvez utiliser le package `ALIBI` celui-ci est nettement moins évolué que son équivalent en dans le langage R [ALEPlot R](https://cran.r-project.org/web/packages/ALEPlot/index.html) ou [iml](https://cran.r-project.org/web/packages/iml/index.html) .
 
 ```python
 

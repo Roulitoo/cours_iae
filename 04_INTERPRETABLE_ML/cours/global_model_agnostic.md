@@ -72,10 +72,10 @@ Les méthodes globales décrivent le comportement **moyen** de votre modèle de 
 
 Dans ce cours nous étudierons les méthodes suivantes :
 
-- Partial dependance plot :  Effet marginal d'une variable (qualitative ou quantitvative) sur la target
-- Accumulated Local Effect : Effet marginal d'une variable par interval sur la target (quanti)
-- Feature Interaction (H-statistic) : Quantifie les effets joints des variables
-- Feature Importance : Mesure l'effet d'une feature sur la fonction de perte
+- **Partial dependance plot :**  Effet marginal d'une variable (qualitative ou quantitvative) sur la target
+- **Accumulated Local Effect :** Effet marginal d'une variable par interval sur la target (quanti)
+- **Feature Interaction (H-statistic) :** Quantifie les effets joints des variables
+- **Feature Importance :** Mesure l'effet d'une feature sur la fonction de perte
 
 #### Partial Depence plot
 

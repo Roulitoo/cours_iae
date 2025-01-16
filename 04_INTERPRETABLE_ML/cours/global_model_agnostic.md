@@ -307,7 +307,7 @@ Graphique de de l'ALE:
 
 ![1735854580515](image/cours/ale_intuition.png)
 
-> On divise l'espace en 5 intervals suivant X1. Pour chaque individu dans chaque interval, nous calculons la différence de prédiction en remplacant les valeurs de X1 par la borne inf et la borne max de l'interval.
+> On divise l'espace en 5 intervalles suivant X1. Pour chaque individu dans chaque interval, nous calculons la différence de prédiction en remplacant les valeurs de X1 par la borne inf et la borne max de l'interval.
 
 **Traduction intuitive:**
 

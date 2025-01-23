@@ -1,24 +1,23 @@
 ## Local model-Agnostic Méthods
 
-Dans ce chapitre nous verrons les différentes méthodes permettant d'analyser le résultat d'une instance ou un groupe d'instance.
+Dans ce chapitre nous verrons les différentes méthodes permettant d'analyser le résultat d'une instance ou un groupe d'instances.
 
 Les méthodes étudiées seront les suivantes :
 
 - Individual conditional curves (ICE) basée sur les Partial Depence Plot(PDP) mais par instance cette fois
-- Local surrogate models (LIME) expliquer une prédiction en remplacant un modèle black box avec un modèle white box localement
-- Scoped rules (anchors) ??
-- Shapley values : méthode d'attribution des prédiction basées sur les caractéristiques individuelles
+- Local surrogate models (LIME) expliquer une prédiction en remplacant un modèle **black box** avec un **modèle white box localement**
+- Shapley values : méthode d'attribution des prédictions basées sur les caractéristiques individuelles
 - SHAP : Dérivée des shapley values avec également avec des global model agnostic (méthode la plus populaire)
 
 ### Individual Conditional Expectation (ICE)
 
-Les Individual Conditional Expectation (ICE) plots permettent de tracer sur une graphique une ligne par instance qui montre comment la prédiction d'une instance est impactée si on fait varier la valeur d'une feature.
+Les Individual Conditional Expectation (ICE) plots permettent de tracer sur un graphique une ligne par instance qui montre comment la prédiction d'une instance est impactée si on fait varier la valeur d'une feature.
 
-Cette méthode est basée sur les PDP, la PDP représente l'effet moyénniser de toutes les courbes ICE. La méhtode est donc exactement la même on fait varier notre feature d'intéret tout en fixant à leur valeur moyenne les autres features.
+Cette méthode est basée sur les PDP, la PDP représente l'effet moyénniser de toutes les courbes ICE. La méthode est donc exactement la même, on fait varier notre feature d'intérêt tout en fixant à leur valeur moyenne les autres features.
 
-L'ICE permet d'obtenir pour une prédiction individuelle l'effet du changement de la feature et surtout de mettre en avant s'il existe de l'hétéorgeinité dans la manière dont la feature affecte une isntance.
+L'ICE permet d'obtenir pour une prédiction individuelle l'effet du changement de la feature et surtout de mettre en avant s'il existe de l'hétérogénéité dans la manière dont la feature affecte un individu.
 
-En effet, le PDP représente la valeur moyennisée mais cela ne nous dit pas si il y a un écart type important!!
+En effet, le PDP représente la valeur moyennisée mais cela ne nous dit pas si il y a une hétérogénéité!!
 
 ### Exemple et implémentation
 
@@ -45,36 +44,46 @@ plt.show()
 
 ![1736457872797](image/local_model_angostic/ice_plots_quanti.png)
 
-Dans la grande majorités les courbes ont la même allures et donc l'effet semble similaire chez nos individus. Le PDP peut donc être un bon résumé des relations entre nos features et la variable à prédire.
+Dans la grande majorité des cas les courbes ont la même allure et donc l'effet semble similaire chez nos individus. Le PDP peut donc être un bon résumé des relations entre nos features et la variable à prédire.
 
 **Avantages :**
 
-Contraitement aux PDP les ICE peuvent révéler des intéractions hétérogènes dans nos variables.
+- Contraitement aux PDP les ICE peuvent révéler des intéractions hétérogènes dans nos variables.
 
 **Désavantages:**
 
-Les courbes ICE ne peuvent afficher qu'une seule feature à la fois. Il serait trop compliqué de lire une superposition de surfaces comme dans l'exemple 2D de PDP pour des prédiction individuelles.
-
-La corrélation reste encore un problème ici. Si on fixe les autres variables à leur valeur se peut produire des combinaisons irréalistes.
-
-Le Graphique peut vite être surchargé si on ajuste pas le nombre de lignes ou la transparence.
+- Les courbes ICE ne peuvent afficher qu'une seule feature à la fois. Il serait trop compliqué de lire une superposition de surfaces comme dans l'exemple 2D de PDP pour des prédictions individuelles.
+- La **corrélation** reste encore un problème ici. Si on fixe les autres variables à leur valeur, cela peut produire des combinaisons irréalistes.
+- Le Graphique peut vite être surchargé si on ajuste pas le nombre de lignes ou la transparence.
 
 ### Local surogate (Lime)
 
-L'algorithme LIME( Local interpretable model-explanation explanations)  est une méthode d'explicabilité conçue pour interpréter des modèles black box.
+L'algorithme LIME( Local interpretable model-explanation )  est une méthode d'explicabilité conçue pour interpréter des modèles black box.
 
 L'idée est d'expliquer **localement** la prédiction d'un modèle en utilisant un modèle **plus simple** et compréhensible dans un voisinage spécifique de l'exemple à expliquer (Reg linéaire, arbre, Lasso, ...)
 
+Prenons l'exemple d'un modèle Black Box très complexe, vous possédez les caractéristiques d'un unique individu. Votre objectif est de comprendre pourquoi le modèle de machine learning prédit une valeur pour cet individu.
+
+Pour cela vous allez générer un dataset à partir de cette observation et dupliquer cette observation en introduisant de léger changement dans les données.
+
+Ces perturbations vous permettront de comprendre pour chaque feature l'apport dans la prédiction. Les perturbations du dataset peuvent représenter une variation plus ou moins importante des caractéristiques de nos individus.
+
+L'ordre de grandeur de ces variations sont importantes pour estimer suite à une variation l'impact sur la variable $y$.
+
+Afin de comprendre les effets de toutes ces variations, nous utilisons un modèle linéaire avec ce dataset perturbé et les valeurs prédites comme étant le nouveau $y$.
+
+Ce modèle nous permettra de comprendre pour un individu l'effet des variables sur sa prédiction.
+
 ![1736460507851](image/local_model_angostic/1736460507851.png)
 
-> Frontière de décision d'un algorithm complexe, interpréter localement par une régression liénaire pour une prédiction
+> Frontière de décision d'un modèle complexe, interprété localement par une régression linéaire pour une prédiction
 
 #### Théorie :
 
 ---
 
-1. Modèle à expliquer $\hat{f(x)}$ : Le classifieur ou modèle.
-2. Nombre d'échantillons (N) : Nombre de points à générer qui seront perturber pour créer l'explication
+1. Modèle à expliquer $\hat{f(x)}$ : Le classifieur ou modèle de régression.
+2. Nombre d'échantillons (N) : Nombre de points à générer qui seront perturbés pour créer l'explication
 3. Instance cible (x) : L'instance à expliquer, ainsi que sa version interprétable (**x'**).
 4. **Noyau de similarité $π_x$** : Une fonction mesurant la proximité entre les échantillons générés et l'instance cible.
 5. **Nombre de feature explicatives (K)** : Le nombre maximal de caractéristiques utilisées dans l'explication.
@@ -90,7 +99,7 @@ L'idée est d'expliquer **localement** la prédiction d'un modèle en utilisant 
 
    - Répétez **N** fois :
      - Générer un échantillon interprétable (**z'**) autour de **x'**.
-     - Associer à **z'** :
+     - Associer à **z** :
        - La prédiction du modèle **f(z)**.
        - La similarité entre **z** et **x**, notée **πx(z)**.
        - Pondération, plus similarité entre **z** et **x** plus **x'** sera pondéré.
@@ -104,21 +113,72 @@ L'idée est d'expliquer **localement** la prédiction d'un modèle en utilisant 
 
 #### Exemple et implémentation :
 
+```python
+import lime
+import lime.lime_tabular
+
+#Création de l'explainer
+explainer = lime.lime_tabular.LimeTabularExplainer(X_train.to_numpy(),  # Attention au format numpy array obligatoire
+                                                   feature_names=features_names , #Nom des features du modèle
+                                                   class_names=['cnt']  , #Variable à predire
+                                                   verbose=True,
+                                                     mode='regression' # Classification ou régression
+                                                     )
+# Index de l'individu à prédire
+i = 3018
+# Résultat de l'explainer
+exp = explainer.explain_instance(X_train.loc[i], rf.predict, num_features=5)
+```
+
+Une fois réalisé vous obtenez un explainer par individu qui sera le résultat d'un modèle local. Ce modèle vous fournira sa valeur prédite vs la valeur réelle issue du modèle black-box.
+
+💡Notez également que LIME fournit une interprétation qualitative, chaque variable est discrétisée pour faciliter l'interprétation, selon les auteurs du papier de recherche :
+
+- Les variables continues centrées sont trop compliquées à interpréter
+- Le double effet négatif engendre également une difficulté de compréhension
+
+Chaque variable continue est alors discrétisée à l'aide de ses quantiles.
+
+```pyth
+#Afficher lime explainer in notebook
+exp.show_in_notebook(show_table=True)
+```
+
+**Exemple de sortie de Lime :**
+
+![1737400566755](image/local_model_angostic/lime_plot.png)
+
+**A gauche**, on peut lire la valeur prédite par notre modèle local ( LIME stock également la valeur prédite par le modèle black box).
+
+**Au centre**, on peut lire l'effet des variables discrétisées sur la prédiction.
+
+**A droite**, la valeur de chaque feature avant la discrétisation.
+
+**Avantages :**
+
+- Interprétation facile car elle vous permet de mobiliser vos connaissances des modèles linéaires
+- Possibilité de réduire le nombre de variables explicatives en utilisant la méthode du Lasso
+- Fonctionne avec les données tabulaires, textes et images!
+
+**Désavantages :**
+
+- Il peut relativement être compliqué de créer des instances similaires surtout pour les données tabulaires
+
 ### Shapley Values :
 
-Cette partie sera consacréer aux valeurs de shapley issue de la théorie des jeux à leur utilisation dans l'interprétation des modèles black box avec les shapleys additive exPlanations AKA SHAP.
+Cette partie sera consacrée aux valeurs de shapley issues de la théorie des jeux à leur utilisation dans l'interprétation des modèles black box avec les shapleys additive exPlanations AKA SHAP.
 
 Exemple intuitif : Qui paiera le taxi?
 
 Supposons un jeu de coopératif où nous avons 3 joueurs et nous voulons savoir comment répartir le prix d'un taxi en fonction de leurs caractéristiques.
 
-Nos 3 joueurs Alice, Bob & Charlie forme une coalition et recoivent un montant spécifique lors du paiement du taxi ( ici le paiement est négatif).
+Nos 3 joueurs Alice, Bob & Charlie forment une coalition et recoivent un montant spécifique lors du paiement du taxi ( ici le paiement est négatif).
 
-L'objectif est de déterminer pour chaque joueur un prix équitable du taxi. Nous posons alors aux joueurs et ce de façon aléatoire le prix qu'ils sont prêt  à payer en fonction d'avec qui ils seront dans le taxi.
+L'objectif est de déterminer pour chaque joueur un prix équitable du taxi. Nous posons alors aux joueurs et ce de façon aléatoire le prix qu'ils sont prêts  à payer en fonction d'avec qui ils seront dans le taxi.
 
-- Alice seul payera 15€
+- Alice seule payera 15€
 - Alice et Bob vivent ensemble mais Bob veut toujours prendre une voiture haut de gamme donc ce sera 25€ (15 € pour Alice et 10€ de majoration pour le standing)
-- Charlie, Alice et Bob payeront 51€ de taxi car Charlie habite très loin.
+- Charlie, Alice et Bob paieront 51€ de taxi car Charlie habite très loin.
 
 Voici l'ensemble des combinaisons possibles :
 
@@ -141,16 +201,16 @@ Ce tableau permet de donner une vague idée de combien chaque passager contribue
 
 La contribution marginale d'un joueur est le montant qu'un individu ajoute au coût total lorsqu'il rejoint un groupe déja formé.
 
-- Si Alice monte seul dans le taxi, elle paie l'intégralité du coût
+- Si Alice monte seule dans le taxi, elle paie l'intégralité du coût
 - Si Alice rejoint le taxi avec Bob, elle paie uniquement le surcoût qu'elle apporte en plus de la présence de Bob
 
-Si on compare la coalition {Alice, Bob} avecc la coalition {Bob} seul, on peut en dérivier la valeur marginal de Alice à la coalition {Bob}.
+Si on compare la coalition {Alice, Bob} avec la coalition {Bob} seul, on peut en dériver la valeur marginale de Alice à la coalition {Bob}.
 
-Cela donne 25 Bob seul et 25 Bob et Alice soit 0€. Le cout marginal de Alice est de 0 dans cette coalition.
+Cela donne 25 Bob seul et 25 Bob et Alice soit 0€. Le coût marginal de Alice est de 0 dans cette coalition.
 
-A l'inverse le cout marginal de Bob avec la coalition Alice on obtient 25 - 15 = 10€. Cela veut dire que Bob 10 dollars le prix.
+A l'inverse le cout marginal de Bob avec la coalition Alice on obtient 25 - 15 = 10€. Cela veut dire que Bob paie 10 dollars le prix.
 
-On calcul donc tous les coût marginaux possibles pour chaque coalition :
+On calcule donc tous les coûts marginaux possibles pour chaque coalition :
 
 | Ajout           | Coalition existante | Coût avant | Coût aprpès | Contribution marginale |
 | --------------- | ------------------- | ----------- | ------------- | ---------------------- |
@@ -167,7 +227,7 @@ On calcul donc tous les coût marginaux possibles pour chaque coalition :
 | Charlie         | {Bob}               | 25          | 51            | 26€                   |
 | Charlie         | {Alice, Bob}        | 25          | 51            | 26€                   |
 
-Nous avons les coûts marginaux de chaque coalition, il reste maintenant à calculer la contribution marginal de chaque passager.
+Nous avons les coûts marginaux de chaque coalition, il reste maintenant à calculer la contribution marginale de chaque passager.
 
 On pourrait assigner une pondération équitable à chaque contribution marginale et moyénniser mais la meilleur façon de le faire est de considérer toutes les permutations possibles et pondérer la moyenne en fonction de ces permutations.
 
@@ -196,13 +256,13 @@ Pour Charlie :
 
 $\frac{1}{6} ( \underbrace{2* 38€ }_\textrm{Charlie to ∅ } + \underbrace{1* 26€ }_\textrm{Charlie to Bob  } + \underbrace{1* 26€ }_\textrm{Charlie to Alice  } + \underbrace{2* 26€ }_\textrm{Charlie to Alice,Bob  } ) = 30€$
 
-La contribution indivudelle de chacun nous donne bien 5.5 + 15.5 + 30 = 51€.
+La contribution individuelle de chacun nous donne bien 5.5 + 15.5 + 30 = 51€.
 
 La Shapley value est donc : La valeur moyenne pondérée de la contribution marginale des joueurs.
 
 #### Des valeurs de Shapley à son usage pour le machine learning
 
-Prénons l'exemple de machine learning suivant :
+Prenons l'exemple de machine learning suivant :
 
 Une personne souhaite prédire le prix d'un appartement en fonction de sa proximité à un parc, de la taille de l'appartement, son étage et la possibilité d'y avoir un chat.
 
@@ -270,8 +330,12 @@ Calculer la valeur de Shapley pour la valeur de la \( j \)-ème caractéristique
 
    - Instance **avec $( j )$** :
      $x_+j = (x_{(1)}, \dots, x_{(j-1)}, x_{(j)}, z_{(j+1)}, \dots, z_{(p)})$
+
+     Ici on conserve les caractéristiques de j et on intègre les valeur aléatoires des features non étudiés $z$
    - Instance **sans \( j \)** :
      $x_j = (x_{(1)}, \dots, x_{(j-1)}, z_{(j)}, z_{(j+1)}, \dots, z_{(p)})$
+
+     Ici on retire les caractéristiques de j remplacée par une permutation aléatoire de $z_{j}$
 
 **Calculer la contribution marginale :**
 	 	  $	\phi^m_j = f(x_+j) - f(x_-j)$
@@ -404,3 +468,137 @@ Interprétation :
 - L'axe des Y représente la valeur de Shapley
 - C'est une projection du beeswarm pour une unique feature
 - L'histogramme en gris indique la distribution de notre feature Hr
+
+### Comment interpreter les shapley values après la standardization
+
+Une transformation usuel d'un jeu de données afin de l'utiliser dans un modèle de machine learning est de standardiser les données.
+
+Cela améliore généralement les performances des modèles et permet de comparer nos variables exprimées dans un même ordre de grandeur mais celui nuit grandement à l'interprétation individuelle des variables.
+
+On cherchera bien souvent à se ramener aux valeurs d'origines pour l'interprétation.
+
+Pour cela on s'appuyera sur la propriété suivante des valeurs de Shapley :
+
+> Si une transformation **univariée** (c’est-à-dire appliquée indépendamment à chaque caractéristique) est utilisée, comme la standardisation,  **les valeurs de Shapley restent inchangées** . Cela signifie qu'il est possible de calculer les SHAP values directement pour les caractéristiques standardisées, puis de les interpréter en les ramenant à leurs valeurs d'origine.
+
+Prenons le dataset suivant
+
+```python
+import shap
+from sklearn.model_selection import train_test_split
+X, y = shap.datasets.adult()
+X_train, X_test, y_train, y_test = train_test_split(
+X, y, test_size=0.2, random_state=1
+)
+
+print(X.head(2))
+
+```
+
+|   | Age  | Workclass | Education-Num | Marital Status | Occupation | Relationship | Race | Sex | Capital Gain | Capital Loss | Hours per week | Country |
+| - | ---- | --------- | ------------- | -------------- | ---------- | ------------ | ---- | --- | ------------ | ------------ | -------------- | ------- |
+| 0 | 39.0 | 7         | 13.0          | 4              | 1          | 0            | 4    | 1   | 2174.0       | 0.0          | 40.0           | 39      |
+| 1 | 50.0 | 6         | 13.0          | 2              | 4          | 4            | 4    | 1   | 0.0          | 0.0          | 13.0           | 39      |
+
+Entrainons une régression logistique pour modéliser les personnes gagnants plus de 50 000$ par mois.
+
+```python
+# get standardized data
+scaler = StandardScaler()
+scaler.fit(X_train)
+X_std = scaler.transform(X)
+
+# train the linear model
+lr = LogisticRegression()
+model = lr.fit(X_std, y)
+
+# explain the model's predictions using SHAP
+explainer = shap.explainers.Linear(model, X_std)
+shap_values = explainer(X_std)
+
+# visualize the model's dependence on the first feature
+shap.plots.scatter(shap_values[:,0])
+
+```
+
+Effet de la feature N°0 sur les shapley value ( ici c'est l'âge standardisée)
+
+![1737495110919](image/local_model_angostic/1737495110919.png)
+
+L'interprétation est relativement compliquée avec des variables standardisée.
+
+Ici 0.8 veut dire que l'âge d'un individu est 0.8 écart type au dessus de la moyenne.
+
+```python
+# retour aux données initialesssform(X_std)
+
+# Visualiser le lien avec les données initiales
+scatter = shap.plots.scatter(shap_values[:, 0], show=False)
+plt.xlabel("Age")
+plt.show()
+
+```
+
+![1737496038563](image/local_model_angostic/1737496038563.png)
+
+#### Une manière plus élégante de le faire est d'utiliser les pipelines de sklearn
+
+```python
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.linear_model import LogisticRegression
+import numpy as np
+
+# Define the categorical and numerical features
+cats = ['Workclass', 'Marital Status', 'Occupation',
+'Relationship', 'Race', 'Sex', 'Country']
+
+nums = ['Age', 'Education-Num', 'Capital Gain',
+'Capital Loss', 'Hours per week']
+
+# Define the column transformer
+preprocessor = ColumnTransformer(
+transformers=[
+('cat', OneHotEncoder(), cats),
+('num', StandardScaler(), nums)
+])
+
+# Define the pipeline
+model = Pipeline([
+('preprocessor', preprocessor),
+('classifier', LogisticRegression(max_iter=10000))
+])
+
+import shap
+from sklearn.model_selection import train_test_split
+X, y = shap.datasets.adult()
+X_train, X_test, y_train, y_test = train_test_split(
+X, y, test_size=0.2, random_state=1
+)
+
+# Fit the pipeline to the training data
+model.fit(X_train, y_train)
+X_sub = shap.sample(X_train, 100)
+ex = shap.Explainer(model.predict_proba, X_sub)
+shap_values = ex(X_test.iloc[0:100])
+
+
+shap.plots.scatter(shap_values[:,0,1])
+```
+
+![1737496765137](image/local_model_angostic/1737496765137.png)
+
+#### Shapley value et corrélation
+
+Les shapley value sont également sensible aux corrélations de vos features!!
+
+En effet, à l'instar des Partial Depence Plot on "fixe" des variables tout en faisant varier la valeur des autres ce qui peut conduire à des combinaisons irréalistes.
+
+Ces combinaions apparaissent lorsque des features sont corrélées, les solutions qui s'offrent à vous pour réduire ce problème sont les suivantes :
+
+- Méthode de feature selection qui élimine les features corrélées
+- Eliminer les features avec peu de variance
+- Technique de réduction de dimension comme l'ACP (⚠️ attention cela complique l'interprétabilité)
+- Transformation de vos features pour casser le line linéaire (mise au carré, log, sqrt, ...)
+- Combiner des features corréles

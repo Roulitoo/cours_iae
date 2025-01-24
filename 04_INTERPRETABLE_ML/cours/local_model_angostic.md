@@ -388,7 +388,7 @@ Pour un individu on peut lancer le force plot.
 ```python
 shap.initjs()
 # visualize the first prediction's explanation
-shap.force_plot(shap_values[86])
+shap.waterfall_plot(shap_values[86])
 ```
 
 ![1736708099927](image/local_model_angostic/waterfall_plot.png)
@@ -591,11 +591,11 @@ shap.plots.scatter(shap_values[:,0,1])
 
 #### Shapley value et corrélation
 
-Les shapley value sont également sensible aux corrélations de vos features!!
+Les shapley value sont également sensibles aux corrélations de vos features!!
 
 En effet, à l'instar des Partial Depence Plot on "fixe" des variables tout en faisant varier la valeur des autres ce qui peut conduire à des combinaisons irréalistes.
 
-Ces combinaions apparaissent lorsque des features sont corrélées, les solutions qui s'offrent à vous pour réduire ce problème sont les suivantes :
+Ces combinaisons apparaissent lorsque des features sont corrélées, les solutions qui s'offrent à vous pour réduire ce problème sont les suivantes :
 
 - Méthode de feature selection qui élimine les features corrélées
 - Eliminer les features avec peu de variance

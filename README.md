@@ -2,6 +2,8 @@
 
 💥 **Pour l'année scolaire 2024/2025 la partie réseaux de neurones sera remplacées par l'interprétabilité des modèles ML**💥
 
+⚠️ **Pour le 30/01/2024 merci de lire la partie Evaluation du cours en bas du readme** ⚠️
+
 ## A installer pour le 16/12
 
 - VsCode
@@ -21,11 +23,11 @@ Chaque repos est structuré de la manière suivante
 
 ```
 📦cours_iae
-┣ 🗒️README.md     
+┣ 🗒️README.md   
 ┃
 ┣ 📁 chapitre_cours
 ┃  ┣  📁code┣ 🗒️code_cours
-┃  ┃       
+┃  ┃   
 ┃  ┣  📁 td ┣ 🗒️ td.ipynb
 ┃  ┃         ┣ 🗒️td_correction.ipynb
 ┃  ┃         ┣ 🗒️requirements.txt
@@ -96,36 +98,36 @@ professionnelle.
 
 # Evaluation du cours
 
-L'évaluation du cours comportera 2 examens:
+L'évaluation du cours comportera 2 examens :
 
-- Un projet à réaliser en groupe
-- Un notebook à critiquer avec des questions
-
-Ainsi qu'une évaluation sur **5 points** de votre repo Github contenant l'ensemble des exercices que nous aurons réalisés plus votre projet final.
+- Un projet à réaliser en groupe qui comptera pour les 3/4 de la note.
+- Une évaluation de votre repo Github contenant l'ensemble des exercices que nous aurons réalisés qui comptera pour 1/4 de la note.
 
 ## Projet
 
 **Objectif :**
-Réaliser un projet de machine learning sur un dataset de 5000 observations minimuns.
-Vous devez obligatoirement réaliser une régression ou classification avec les modèles du cours ( SVM et réseaux de neurones).
+Réaliser un projet de machine learning sur un dataset de 4000 observations minimuns.
 
-**Modalité**
+- Vous devez obligatoirement réaliser une régression ou classification en comparant différents modèles (SVM, Modèle linéaire, Random Forest, ...).
+- Vous devez également interpréter localement et globalement votre modèle de machine learning avec les méthodes vues dans la partie explicabilité et interprétabilité.
+
+**Modalités**
 Pour l'évaluation vous devrez me soumettre un projet comportant un fichier .md(markdown) qui contient les commentaires et résultats de votre projet.
-Présentation de vos résutlats, discussion du choix des méthodes, vos analyses, ...
+Présentation de vos résultats, discussion du choix des méthodes, vos analyses, ...
 Il faudra également me joindre un fichier en .py ou .ipynb avec votre code.
 
-Tous ces éléments devront être déposé dans un repo Github à votre nom/vos noms!
+Tous ces éléments devront être déposés dans un repo Github à votre nom/vos noms!
 
-Date de rendu **10 février 23h59h59s**. Si vous dépassez cette date ce sera 0 et pas de correction de ma part.
+Date de rendu **jj MM hh:mm:ss**. **Si vous dépassez cette date ce sera 0 et pas de correction de ma part.**
 
 Elements de notation :
 
 - Créer un repos Github pour 1 ou 2 personnes. (2 max par projet) (0 point)
-- Choix d'un dataset que je valide (2 points)
-- Me communiquer votre projet avant le 31 Janvier (2 points bonus)
-- Un fichier .md explique ce que vous avez fait, ce que vous avez essayé, ce qui a marché, ce qui n'a pas marché, et quels sont vos résultats(10 points)
-- Votre fichier avec le code en version .py ou .ipynb réutilisable, lisible avec des commentaires (8 points)
-
-## QCM
-
-<A définir>
+- Choix d'un dataset et d'une problématique de modélisation à valider le **30 Janvier** (2 points)
+- Un fichier .md expliquant ce que vous avez fait, ce que vous avez essayé, ce qui a marché, ce qui n'a pas marché, et quels sont vos résultats (10 points)
+- Votre fichier avec le code en version .py ou .ipynb réutilisable, lisible avec des commentaires (10 points)
+- Votre code doit être re-éxecutable cela signifie qu'il me faut :
+  - Votre version de python
+  - Votre dataset brut
+  - Un requirements.txt avec les packages utilisés
+  - Une spécification des hyperparamètres de votre meilleur modèle

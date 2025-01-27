@@ -2,7 +2,7 @@
 
 💥 **Pour l'année scolaire 2024/2025 la partie réseaux de neurones sera remplacées par l'interprétabilité des modèles ML**💥
 
-⚠️ **Pour le 30/01/2024 merci de lire la partie Evaluation du cours en bas du readme** ⚠️
+⚠️ **Pour le 30/01/2024 merci de lire la partie Evaluation à la fin du Readme**⚠️
 
 ## A installer pour le 16/12
 

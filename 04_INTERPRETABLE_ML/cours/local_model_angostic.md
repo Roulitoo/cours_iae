@@ -447,8 +447,8 @@ De la même manière on peut lire qu'une humidié avec de forte valeur impact la
 
 1. Observer l'ordre des features, plus une feature est haute plus elle aura une influence sur la shapley value
 2. Pour chaque feature d'intéret regarder
-   1. Sa distribution et voir son influece. Plus la distribution sera large plus la variable aura une influence.
-   2. Regarder la distrubtion des couleurs et voir s'il y a une relation monotone ou un pattern plus complexe
+   1. Sa distribution et voir son influence. Plus la distribution sera large plus la variable aura une influence.
+   2. Regarder la distribution des couleurs et voir s'il y a une relation monotone ou un pattern plus complexe
 
 ##### Effet d'une variable sur notre target
 
@@ -530,12 +530,18 @@ L'interprétation est relativement compliquée avec des variables standardisée.
 Ici 0.8 veut dire que l'âge d'un individu est 0.8 écart type au dessus de la moyenne.
 
 ```python
-# retour aux données initialesssform(X_std)
+# On rajoute les noms des features dans les valeurs de shapley
+for i, c in enumerate(X.columns):
+    shap_values.feature_names[i] = c
 
-# Visualiser le lien avec les données initiales
-scatter = shap.plots.scatter(shap_values[:, 0], show=False)
-plt.xlabel("Age")
-plt.show()
+
+# On remplace les valeurs de X_std par ses valeurs orginales.
+## Car la transformation de standscaler est univariée!
+
+shap_values.data = X.values
+
+# visualize the model's dependence on the first feature again, now in the new original feature space
+shap.plots.scatter(shap_values[:, 0])
 
 ```
 

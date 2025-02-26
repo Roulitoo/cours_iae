@@ -2,7 +2,13 @@
 
 💥 **Pour l'année scolaire 2024/2025 la partie réseaux de neurones sera remplacées par l'interprétabilité des modèles ML**💥
 
-⚠️ **Pour le 30/01/2024 merci de lire la partie Evaluation à la fin du Readme**⚠️
+⚠️ **Date de rendu des projets**
+
+Td N°2 : 07/03/2025 23h59m59s , à déposer sur un repo github et m'envoyer un mail
+
+Projet : 10/05/2025 23h59m59s , à déposer sur un repo github pour le projet et m'envoyer un mail pour me prévenir
+
+⚠️
 
 ## A installer pour le 16/12
 
@@ -118,7 +124,7 @@ Il faudra également me joindre un fichier en .py ou .ipynb avec votre code.
 
 Tous ces éléments devront être déposés dans un repo Github à votre nom/vos noms!
 
-Date de rendu **jj MM hh:mm:ss**. **Si vous dépassez cette date ce sera 0 et pas de correction de ma part.**
+Date de rendu **10-05-2025 23:59:59**. **Si vous dépassez cette date ce sera 0 et pas de correction de ma part.**
 
 Elements de notation :
 
@@ -131,3 +137,7 @@ Elements de notation :
   - Votre dataset brut
   - Un requirements.txt avec les packages utilisés
   - Une spécification des hyperparamètres de votre meilleur modèle
+
+Evalluation du Td N°2 : 
+
+Date de rendu :  07-03-2024

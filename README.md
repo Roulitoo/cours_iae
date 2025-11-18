@@ -36,7 +36,8 @@ Chaque repos est structuré de la manière suivante
 ┃  ┃   
 ┃  ┣  📁 td ┣ 🗒️ td.ipynb
 ┃  ┃         ┣ 🗒️td_correction.ipynb
-┃  ┃         ┣ 🗒️requirements.txt
+┃  ┃         ┣ 🗒️pyproject.toml
+┃  ┃         ┣ 🗒️uv.lock
 ┃  ┃
 ┃  ┣  📁cours┣ 🗒️cours.md
 ┃  ┃          ┣ 🗒️cours.pdf

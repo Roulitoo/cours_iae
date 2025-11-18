@@ -1,6 +1,6 @@
 # Cours IAE Nantes
 
-💥 **Pour l'année scolaire 2024/2025 la partie réseaux de neurones sera remplacées par l'interprétabilité des modèles ML**💥
+💥 **A partir de l'année scolaire 2024/2025 la partie réseaux de neurones sera remplacées par l'interprétabilité des modèles ML**💥
 
 ⚠️ **Date de rendu des projets**
 
@@ -10,7 +10,7 @@ Projet : 10/05/2025 23h59m59s , à déposer sur un repo github pour le projet et
 
 ⚠️
 
-## A installer pour le 16/12
+## A installer pour le 24/11
 
 - VsCode
 - Anaconda

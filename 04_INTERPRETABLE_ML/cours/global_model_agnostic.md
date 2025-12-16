@@ -543,6 +543,23 @@ $H_j^2 = \frac{\sum_{i=1}^n \big[ \hat{f}(x^{(i)}) - PD_j(x_j^{(i)}) - PD_{-j}(x
 - $H = 1$ : L'effet des features provient uniquement des interactions (leurs PDP individuelles sont constantes).
 - $H > 1$ : Rare, cela peut arriver si la variance des interactions dépasse la variance totale, mais ce cas est difficile à interpréter.
 
+###### 📊 Lecture qualitative (règle pratique)
+
+| Valeur de H      | Interprétation             |
+| ---------------- | --------------------------- |
+| < 0.1            | Pas d’interaction          |
+| 0.1 – 0.3       | Interaction faible          |
+| 0.3 – 0.5       | Interaction modérée       |
+| **≈ 0.5** | **Interaction forte** |
+| > 0.6            | Interaction dominante       |
+
+
+
+🎓 Phrase “clé en main” 
+
+> *« Une H-statistic de 0,5 indique qu’environ la moitié de la variance associée à cette variable provient d’interactions avec d’autres variables, ce qui rend son effet marginal seul difficilement interprétable. »*
+>
+
 ---
 
 ###### 5. Problèmes pratiques du calcul
@@ -707,20 +724,12 @@ Input: Un modèle entrainé $\hat{f}$, une matrice de vos features $X$, un vecte
 ##### Exemple et implémentation :
 
 ```python
-
-from sklearn.inspection import permutation_importance
-
-random_permutation = permutation_importance(model, X, y,
-
-                                    n_repeats=30,
-
-                                    random_state=0)
-
+b
 ```
 
 ![1736368325267](image/cours/permutation_feature_importance.png)
 
-> Permuter la variable hour conduit à une augmentation du MSE de 1,4
+> Permuter la variable hour conduit à une augmentation du MSE de 1,4 unités du MSE
 
 ##### Avantages :
 

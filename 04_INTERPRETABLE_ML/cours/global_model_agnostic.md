@@ -724,7 +724,15 @@ Input: Un modèle entrainé $\hat{f}$, une matrice de vos features $X$, un vecte
 ##### Exemple et implémentation :
 
 ```python
-b
+
+from sklearn.inspection import permutation_importance
+
+random_permutation = permutation_importance(model, X, y,
+
+                                    n_repeats=30,
+
+                                    random_state=0)
+
 ```
 
 ![1736368325267](image/cours/permutation_feature_importance.png)

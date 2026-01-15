@@ -338,7 +338,7 @@ Calculer la valeur de Shapley pour la valeur de la \( j \)-ème caractéristique
      Ici on retire les caractéristiques de j remplacée par une permutation aléatoire de $z_{j}$
 
 **Calculer la contribution marginale :**
-	 	  $	\phi^m_j = f(x_+j) - f(x_-j)$
+	$$\phi^m_j = f(x_+j) - f(x_-j)$$
 
 ---
 

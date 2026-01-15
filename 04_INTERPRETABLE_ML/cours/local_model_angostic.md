@@ -246,7 +246,7 @@ Dans 2 cas Alice est ajoutée à un taxi vide, dans un cas elle est rajoutée av
 
 En pondérant les contributs marginal on obtient le calcul suivant pour la contribution moyenne :
 
-$\frac{1}{6} ( \underbrace{2* 15€ }_\textrm{Alice to ∅ } + \underbrace{1* 0€ }_\textrm{Alice to Bob  } + \underbrace{1* 3€ }_\textrm{Alice to Charlie  } + \underbrace{2* 0€ }_\textrm{Alice to Bob,Charlie  } ) = 5.5€$
+$$\frac{1}{6} ( \underbrace{2* 15€ }_\textrm{Alice to ∅ } + \underbrace{1* 0€ }_\textrm{Alice to Bob  } + \underbrace{1* 3€ }_\textrm{Alice to Charlie  } + \underbrace{2* 0€ }_\textrm{Alice to Bob,Charlie  } ) = 5.5€$$
 
 Pour Bob :
 

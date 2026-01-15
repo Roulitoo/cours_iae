@@ -250,11 +250,11 @@ $\frac{1}{6} ( \underbrace{2* 15€ }_\textrm{Alice to ∅ } + \underbrace{1* 0�
 
 Pour Bob :
 
-$\frac{1}{6} ( \underbrace{2* 25€ }_\textrm{Bob to ∅ } + \underbrace{1* 10€ }_\textrm{Bob to Alice  } + \underbrace{1* 13€ }_\textrm{Bob to Charlie  } + \underbrace{2* 10€ }_\textrm{Bob to Alice,Charlie  } ) = 15.5€$
+$$\frac{1}{6} ( \underbrace{2* 25€ }_\textrm{Bob to ∅ } + \underbrace{1* 10€ }_\textrm{Bob to Alice  } + \underbrace{1* 13€ }_\textrm{Bob to Charlie  } + \underbrace{2* 10€ }_\textrm{Bob to Alice,Charlie  } ) = 15.5€$$
 
 Pour Charlie :
 
-$\frac{1}{6} ( \underbrace{2* 38€ }_\textrm{Charlie to ∅ } + \underbrace{1* 26€ }_\textrm{Charlie to Bob  } + \underbrace{1* 26€ }_\textrm{Charlie to Alice  } + \underbrace{2* 26€ }_\textrm{Charlie to Alice,Bob  } ) = 30€$
+$$\frac{1}{6} ( \underbrace{2* 38€ }_\textrm{Charlie to ∅ } + \underbrace{1* 26€ }_\textrm{Charlie to Bob  } + \underbrace{1* 26€ }_\textrm{Charlie to Alice  } + \underbrace{2* 26€ }_\textrm{Charlie to Alice,Bob  } ) = 30€$$
 
 La contribution individuelle de chacun nous donne bien 5.5 + 15.5 + 30 = 51€.
 

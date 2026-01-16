@@ -108,7 +108,7 @@ professionnelle.
 L'évaluation du cours comportera 2 examens :
 
 - Un projet à réaliser en groupe qui comptera pour les 3/4 de la note.
-- Une évaluation de votre repo Github contenant l'ensemble des exercices que nous aurons réalisés qui comptera pour 1/4 de la note.
+- Une évaluation du dernier TD qui comptera pour 1/4 de la note.
 
 ## Projet
 

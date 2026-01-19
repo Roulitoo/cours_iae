@@ -4,9 +4,9 @@
 
 ⚠️ **Date de rendu des projets**
 
-Td N°2 : 07/03/2025 23h59m59s , à déposer sur un repo github et m'envoyer un mail
+Td N°2 : 09/03/2026 23h59m59s , à déposer sur un repo github et m'envoyer un mail
 
-Projet : 10/05/2025 23h59m59s , à déposer sur un repo github pour le projet et m'envoyer un mail pour me prévenir
+Projet : 13/04/2025 23h59m59s , à déposer sur un repo github pour le projet et m'envoyer un mail pour me prévenir
 
 ⚠️
 
@@ -125,7 +125,7 @@ Il faudra également me joindre un fichier en .py ou .ipynb avec votre code.
 
 Tous ces éléments devront être déposés dans un repo Github à votre nom/vos noms!
 
-Date de rendu **10-05-2025 23:59:59**. **Si vous dépassez cette date ce sera 0 et pas de correction de ma part.**
+Date de rendu **13-04-2026 23:59:59**. **Si vous dépassez cette date ce sera 0 et pas de correction de ma part.**
 
 Elements de notation :
 

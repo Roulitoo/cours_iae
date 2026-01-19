@@ -136,7 +136,7 @@ Elements de notation :
 - Votre code doit être re-éxecutable cela signifie qu'il me faut :
   - Votre version de python
   - Votre dataset brut
-  - Un requirements.txt avec les packages utilisés
+  - Un fichier uv.lock et un fichier pyproject.toml obtenu à partir du gestionnaire de package UV
   - Une spécification des hyperparamètres de votre meilleur modèle
 
 Evaluation du Td N°2 : 

@@ -130,7 +130,7 @@ Date de rendu **13-04-2026 23:59:59**. **Si vous dépassez cette date ce sera 0 
 Elements de notation :
 
 - Créer un repos Github pour 1 ou 2 personnes. (2 max par projet) (0 point)
-- Choix d'un dataset et d'une problématique de modélisation à valider le **30 Janvier** (2 points)
+- Choix d'un dataset et d'une problématique de modélisation à valider avant le **30 Janvier** via github issues (2 points)
 - Un fichier .md expliquant ce que vous avez fait, ce que vous avez essayé, ce qui a marché, ce qui n'a pas marché, et quels sont vos résultats (10 points)
 - Votre fichier avec le code en version .py ou .ipynb réutilisable, lisible avec des commentaires (10 points)
 - Votre code doit être re-éxecutable cela signifie qu'il me faut :
@@ -139,6 +139,6 @@ Elements de notation :
   - Un requirements.txt avec les packages utilisés
   - Une spécification des hyperparamètres de votre meilleur modèle
 
-Evalluation du Td N°2 : 
+Evaluation du Td N°2 : 
 
 Date de rendu :  07-03-2024
